@@ -1,0 +1,140 @@
+opt/atlassian/pipelines/agent/build/package.json
+opt/atlassian/pipelines/agent/build/package-lock.json
+opt/atlassian/pipelines/agent/build/angular.json
+opt/atlassian/pipelines/agent/build/tsconfig.json
+opt/atlassian/pipelines/agent/build/README.md
+opt/atlassian/pipelines/agent/build/.editorconfig
+opt/atlassian/pipelines/agent/build/.gitignore
+opt/atlassian/pipelines/agent/build/tslint.json
+opt/atlassian/pipelines/agent/build/bitbucket-pipelines.yml
+opt/atlassian/pipelines/agent/build/src/
+opt/atlassian/pipelines/agent/build/src/tsconfig.spec.json
+opt/atlassian/pipelines/agent/build/src/browserslist
+opt/atlassian/pipelines/agent/build/src/polyfills.ts
+opt/atlassian/pipelines/agent/build/src/styles.scss
+opt/atlassian/pipelines/agent/build/src/assets/
+opt/atlassian/pipelines/agent/build/src/assets/images/
+opt/atlassian/pipelines/agent/build/src/assets/images/card_image.png
+opt/atlassian/pipelines/agent/build/src/assets/.gitkeep
+opt/atlassian/pipelines/agent/build/src/environments/
+opt/atlassian/pipelines/agent/build/src/environments/environment.prod.ts
+opt/atlassian/pipelines/agent/build/src/environments/environment.ts
+opt/atlassian/pipelines/agent/build/src/main.ts
+opt/atlassian/pipelines/agent/build/src/app/
+opt/atlassian/pipelines/agent/build/src/app/app.component.scss
+opt/atlassian/pipelines/agent/build/src/app/constants/
+opt/atlassian/pipelines/agent/build/src/app/constants/urls.ts
+opt/atlassian/pipelines/agent/build/src/app/constants/currency.ts
+opt/atlassian/pipelines/agent/build/src/app/pipes/
+opt/atlassian/pipelines/agent/build/src/app/pipes/underscore-killer.pipe.ts
+opt/atlassian/pipelines/agent/build/src/app/pipes/currency-change.pipe.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/pipes/underscore-killer.pipe.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/pipes/currency-change.pipe.ts
+opt/atlassian/pipelines/agent/build/src/app/app.module.ts
+opt/atlassian/pipelines/agent/build/src/app/app.component.html
+opt/atlassian/pipelines/agent/build/src/app/app.component.ts
+opt/atlassian/pipelines/agent/build/src/app/pages/
+opt/atlassian/pipelines/agent/build/src/app/pages/contact/
+opt/atlassian/pipelines/agent/build/src/app/pages/contact/contact.component.html
+opt/atlassian/pipelines/agent/build/src/app/pages/contact/contact.component.scss
+opt/atlassian/pipelines/agent/build/src/app/pages/contact/contact.component.ts
+opt/atlassian/pipelines/agent/build/src/app/pages/contact/contact.component.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/pages/main/
+opt/atlassian/pipelines/agent/build/src/app/pages/main/main.component.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/pages/main/main.component.scss
+opt/atlassian/pipelines/agent/build/src/app/pages/main/main.component.ts
+opt/atlassian/pipelines/agent/build/src/app/pages/main/main.component.html
+opt/atlassian/pipelines/agent/build/src/app/pages/about/
+opt/atlassian/pipelines/agent/build/src/app/pages/about/about.component.html
+opt/atlassian/pipelines/agent/build/src/app/pages/about/about.component.ts
+opt/atlassian/pipelines/agent/build/src/app/pages/about/about.component.scss
+opt/atlassian/pipelines/agent/build/src/app/pages/about/about.component.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/pages/faq/
+opt/atlassian/pipelines/agent/build/src/app/pages/faq/faq.component.scss
+opt/atlassian/pipelines/agent/build/src/app/pages/faq/faq.component.html
+opt/atlassian/pipelines/agent/build/src/app/pages/faq/faq.component.ts
+opt/atlassian/pipelines/agent/build/src/app/pages/faq/faq.component.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/app-routing.module.ts
+opt/atlassian/pipelines/agent/build/src/app/interfaces/
+opt/atlassian/pipelines/agent/build/src/app/interfaces/faq.ts
+opt/atlassian/pipelines/agent/build/src/app/interfaces/common.ts
+opt/atlassian/pipelines/agent/build/src/app/interfaces/categories.ts
+opt/atlassian/pipelines/agent/build/src/app/interfaces/shop.ts
+opt/atlassian/pipelines/agent/build/src/app/interfaces/product.ts
+opt/atlassian/pipelines/agent/build/src/app/app.component.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/components/
+opt/atlassian/pipelines/agent/build/src/app/components/item-card/
+opt/atlassian/pipelines/agent/build/src/app/components/item-card/item-card.component.scss
+opt/atlassian/pipelines/agent/build/src/app/components/item-card/item-card.component.html
+opt/atlassian/pipelines/agent/build/src/app/components/item-card/item-card.component.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/components/item-card/item-card.component.ts
+opt/atlassian/pipelines/agent/build/src/app/components/categories-list/
+opt/atlassian/pipelines/agent/build/src/app/components/categories-list/categories-list.component.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/components/categories-list/categories-list.component.scss
+opt/atlassian/pipelines/agent/build/src/app/components/categories-list/categories-list.component.html
+opt/atlassian/pipelines/agent/build/src/app/components/categories-list/categories-list.component.ts
+opt/atlassian/pipelines/agent/build/src/app/components/product-list/
+opt/atlassian/pipelines/agent/build/src/app/components/product-list/product-list.component.ts
+opt/atlassian/pipelines/agent/build/src/app/components/product-list/product-list.component.scss
+opt/atlassian/pipelines/agent/build/src/app/components/product-list/product-list.component.html
+opt/atlassian/pipelines/agent/build/src/app/components/product-list/product-list.component.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/components/shop-list/
+opt/atlassian/pipelines/agent/build/src/app/components/shop-list/shop-list.component.ts
+opt/atlassian/pipelines/agent/build/src/app/components/shop-list/shop-list.component.scss
+opt/atlassian/pipelines/agent/build/src/app/components/shop-list/shop-list.component.html
+opt/atlassian/pipelines/agent/build/src/app/components/shop-list/shop-list.component.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/services/
+opt/atlassian/pipelines/agent/build/src/app/services/currency.service.spec.ts
+opt/atlassian/pipelines/agent/build/src/app/services/currency.service.ts
+opt/atlassian/pipelines/agent/build/src/app/services/api.service.ts
+opt/atlassian/pipelines/agent/build/src/app/services/api.service.spec.ts
+opt/atlassian/pipelines/agent/build/src/tslint.json
+opt/atlassian/pipelines/agent/build/src/karma.conf.js
+opt/atlassian/pipelines/agent/build/src/test.ts
+opt/atlassian/pipelines/agent/build/src/index.html
+opt/atlassian/pipelines/agent/build/src/tsconfig.app.json
+opt/atlassian/pipelines/agent/build/src/favicon.png
+opt/atlassian/pipelines/agent/build/e2e/
+opt/atlassian/pipelines/agent/build/e2e/tsconfig.e2e.json
+opt/atlassian/pipelines/agent/build/e2e/protractor.conf.js
+opt/atlassian/pipelines/agent/build/e2e/src/
+opt/atlassian/pipelines/agent/build/e2e/src/app.po.ts
+opt/atlassian/pipelines/agent/build/e2e/src/app.e2e-spec.ts
+opt/atlassian/pipelines/agent/build/.angulardoc.json
+
+> node-sass@4.11.0 install /home/infinity/frontend/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /home/infinity/.npm/node-sass/4.11.0/linux-x64-64_binding.node
+
+> node-sass@4.11.0 postinstall /home/infinity/frontend/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /home/infinity/frontend/node_modules/node-sass/vendor/linux-x64-64/binding.node
+Testing binary
+Binary is fine
+
+> ngx-infinite-scroll@6.0.1 postinstall /home/infinity/frontend/node_modules/ngx-infinite-scroll
+> opencollective postinstall
+
+
+     *** Thank you for using ngx-infinite-scroll! ***
+
+Please consider donating to our open collective
+     to help us maintain this package.
+
+  https://opencollective.com/ngx-infinite-scroll/donate
+
+                    ***
+
+added 1183 packages from 1063 contributors and audited 41448 packages in 34.799s
+found 0 vulnerabilities
+
+
+Date: 2019-02-09T20:32:22.321Z
+Hash: 06130d9ded0dc35e14fa
+Time: 68288ms
+chunk {0} runtime.a5dd35324ddfd942bef1.js (runtime) 1.41 kB [entry] [rendered]
+chunk {1} main.b5b61b34a6c1e2430f2a.js (main) 423 kB [initial] [rendered]
+chunk {2} polyfills.3eb7881d3a00da6c675e.js (polyfills) 41 kB [initial] [rendered]
+chunk {3} styles.2c6f3d6b60d0e33444fe.css (styles) 144 kB [initial] [rendered]

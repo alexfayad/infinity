@@ -1,0 +1,4 @@
+SECRET_KEY="Qz20Cd2p7r+bDWhdtiG7fqGXnOaiIqRykicWz9dL8lszo0fFyevzGQ"
+DEBUG=''
+STATIC_ROOT=/var/www/infinity_static/
+PATH=$PATH:/home/infinity/backend/core/parser/driver/

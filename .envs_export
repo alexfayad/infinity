@@ -1,0 +1,4 @@
+export SECRET_KEY="Qz20Cd2p7r+bDWhdtiG7fqGXnOaiIqRykicWz9dL8lszo0fFyevzGQ"
+export DEBUG=''
+export STATIC_ROOT=/var/www/infinity_static/
+export PATH=$PATH:/home/infinity/backend/core/parser/driver/
