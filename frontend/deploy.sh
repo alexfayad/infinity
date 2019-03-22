@@ -1,0 +1,1 @@
+ng build --prod --output-path ../Shops/staticfiles/ang/ --watch --output-hashing none

@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options as chrome_options
 
 
 def hide_webdriver(driver):
-    driver.execute_script(const setProperty = () => {
+    driver.execute_script("""const setProperty = () => {
         Object.defineProperty(navigator, "languages", {
             get: function() {
                 return ["en-US", "en", "es"];
@@ -25,7 +25,7 @@ def hide_webdriver(driver):
           get: () => undefined,
         });
     };
-    setProperty();)
+    setProperty();""")
 
 
 def get_page_by_selenium(url):
@@ -77,6 +77,7 @@ def get_firefox_driver():
     profile.update_preferences()
     caps = DesiredCapabilities().FIREFOX
     caps["pageLoadStrategy"] = "none"
+    caps["marionette"] = True
     options = firefox_options()
     options.headless = True
     options.add_argument('start-maximized')
