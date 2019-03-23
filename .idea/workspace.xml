@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3695bf37-a43d-478c-a00c-9a63eb741f4b" name="Default Changelist" comment="" />
+    <list default="true" id="3695bf37-a43d-478c-a00c-9a63eb741f4b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/Shops/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/Shops/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/static/ang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/ang/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/static/ang/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/ang/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/staticfiles/ang/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/deploy.sh" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shops/.ebxtensions/django.config">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -23,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/Shops/.elasticbeanstalk/config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -40,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shops/Shops/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="616">
+              <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
             </state>
           </provider>
         </entry>
@@ -57,8 +64,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Shops/Shops/settings.py" />
         <option value="$PROJECT_DIR$/Shops/.ebxtensions/django.config" />
+        <option value="$PROJECT_DIR$/Shops/Shops/settings.py" />
       </list>
     </option>
   </component>
@@ -88,18 +95,6 @@
               <item name="infinity" type="b2602c69:ProjectViewProjectNode" />
               <item name="infinity" type="462c0819:PsiDirectoryNode" />
               <item name="Shops" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="infinity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="infinity" type="462c0819:PsiDirectoryNode" />
-              <item name="Shops" type="462c0819:PsiDirectoryNode" />
-              <item name=".ebxtensions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="infinity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="infinity" type="462c0819:PsiDirectoryNode" />
-              <item name="Shops" type="462c0819:PsiDirectoryNode" />
-              <item name=".elasticbeanstalk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="infinity" type="b2602c69:ProjectViewProjectNode" />
@@ -141,12 +136,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553277993511</updated>
-      <workItem from="1553278001565" duration="1436000" />
+      <workItem from="1553278001565" duration="2162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1436000" />
+    <option name="totallyTimeSpent" value="2162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="193" y="23" width="1400" height="913" extended-state="0" />
@@ -198,24 +193,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shops/Shops/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shops/.elasticbeanstalk/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Shops/.ebxtensions/django.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shops/Shops/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
         </state>
       </provider>
     </entry>
