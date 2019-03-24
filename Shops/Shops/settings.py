@@ -24,7 +24,7 @@ SECRET_KEY = 'oxr#QHz4TRbqMw8G8(Hs{/p=HeR+m9fV'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(os.environ.get('DEBUG', False))
 
-ALLOWED_HOSTS = ['*', '127.0.0.1', 'localhost', 'Shops.fbmqgxuxev.us-west-2.elasticbeanstalk.com', 'infinity.supply']
+ALLOWED_HOSTS = ['*', '127.0.0.1', 'localhost', 'Shops.fbmqgxuxev.us-west-2.elasticbeanstalk.com', 'infinity.supply', 'infinity-redis.aawqsi.ng.0001.usw2.cache.amazonaws.com:6379']
 
 # Application definition
 
