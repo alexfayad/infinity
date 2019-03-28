@@ -169,7 +169,7 @@ CACHES = {
 }
 
 CELERY_BROKER_URL = config('CELERY_BROKER_URL', default='redis://localhost:6379') 
-CELERY_RESULT_BACKEND = config('CELERY_RESULT_BACKEND', default='redis://localhost:6379')
+CELERY_RESULT_BACKEND = config('CELERY_RESULT_BACKEND', default='django-db')
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
@@ -177,7 +177,7 @@ CELERY_TIMEZONE = TIME_ZONE
 
 
 CELERY_CONFIGURATION = {
-    'broker_url': config('CELERY_BROKER_URL', default='redis://localhost:6379') ,
+    'broker_url': config('CELERY_BROKER_URL', default='Elasticache') ,
     'beat_scheduler': "django_celery_beat.schedulers:DatabaseScheduler",
     'beat_schedule': {
         'parsing': {
