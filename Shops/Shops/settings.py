@@ -193,4 +193,5 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # API keys
 CURRENCY_API_KEY = config('CURRENCY_API_KEY')
-from Shops.aws.conf import *  # noqa
+
+# from Shops.aws.conf import *  # noqa
