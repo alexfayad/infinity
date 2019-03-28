@@ -22,13 +22,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'oxr#QHz4TRbqMw8G8(Hs{/p=HeR+m9fV'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('DEBUG', False))
+DEBUG = bool(os.environ.get('DEBUG', True))
 
 ALLOWED_HOSTS = ['*', '127.0.0.1', 'localhost', 'Shops.fbmqgxuxev.us-west-2.elasticbeanstalk.com', 'infinity.supply', 'infinity-redis.aawqsi.ng.0001.usw2.cache.amazonaws.com:6379']
 
 # Application definition
 
 INSTALLED_APPS = [
+    'django_redis',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,7 +43,21 @@ INSTALLED_APPS = [
     'django_celery_beat',
     'corsheaders',
     'Shops',
+    'django_s3_storage',
 ]
+
+YOUR_S3_BUCKET = "zappa-1o7we1h38"
+
+STATICFILES_STORAGE = "django_s3_storage.storage.StaticS3Storage"
+AWS_S3_BUCKET_NAME_STATIC = YOUR_S3_BUCKET
+
+# These next two lines will serve the static files directly
+# from the s3 bucket
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % YOUR_S3_BUCKET
+STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
+
+# OR...if you create a fancy custom domain for your static files use:
+#AWS_S3_PUBLIC_URL_STATIC = "https://static.zappaguide.com/"
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -147,15 +162,18 @@ REST_FRAMEWORK = {
 }
 
 CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "infinity-redis-001.aawqsi.0001.usw2.cache.amazonaws.com:6379/1",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient"
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': [
+            "redis://infinity-redis-001.aawqsi.0001.usw2.cache.amazonaws.com:6379",
+        ],
+        'OPTIONS': {
+            'DB': 0,
+            'MASTER_CACHE': "infinity-redis-001.aawqsi.0001.usw2.cache.amazonaws.com:6379"
         },
-        "KEY_PREFIX": "example"
     }
 }
+
 BROKER_URL = 'django://'
 CELERY_BROKER_URL = 'redis://localhost'
 CELERY_RESULT_BACKEND = 'django-db'
