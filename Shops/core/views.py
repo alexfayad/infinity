@@ -1,5 +1,5 @@
 import base64
-
+import logging
 import requests
 from django.contrib.auth.models import User
 from django.db.transaction import atomic
@@ -12,7 +12,9 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
-import logging
+
+
+from django.conf import settings
 
 from core.mixins import BulkCreateModelMixin
 from core.models import Product, Link, ProductType, MapSubcategory, FAQContent, Currency
@@ -20,6 +22,8 @@ from core.serializers import ProductSerializer, ProductTypeSerializer, LinksSeri
     MapSubcategoriesSerializer, FAQContentSerializer
 
 logger = logging.getLogger(__name__)
+
+CURRENCY_API_KEY = getattr(settings, "CURRENCY_API_KEY")
 
 
 class StandardResultsSetPagination(PageNumberPagination):
@@ -68,7 +72,8 @@ class ProductTypeFilterBackend(BaseFilterBackend):
 
         if product_type:
             try:
-                product_type = ProductType.objects.get(name=product_type.lower())
+                product_type = ProductType.objects.get(
+                    name=product_type.lower())
             except ProductType.DoesNotExist:
                 product_type = None
             if product_type:
@@ -90,7 +95,8 @@ class ProductsView(generics.ListAPIView):
 class ShopView(APIView):
     def get(self, request, *args, **kwargs):
         # parse.delay()
-        data = [{"shop_name": shop, "verbose_name": verbose} for shop, verbose in Link.SHOP_NAME]
+        data = [{"shop_name": shop, "verbose_name": verbose}
+                for shop, verbose in Link.SHOP_NAME]
         categories = ProductTypeSerializer(ProductType.objects, many=True).data
         return Response({"shops": data, "categories": categories})
 
@@ -112,7 +118,8 @@ class ProductCreateView(ModelViewSet, BulkCreateModelMixin):
 
     def post(self, request, *args, **kwargs):
         links = {el["link"] for el in request.data}
-        items_id = list(Product.objects.filter(link_id__in=links).values_list("pk", flat=True))
+        items_id = list(Product.objects.filter(
+            link_id__in=links).values_list("pk", flat=True))
         with atomic():
             response = self.create(request, *args, **kwargs)
         Product.objects.filter(pk__in=items_id).delete()
@@ -133,10 +140,12 @@ class FAQContentView(ListAPIView):
 class CurrencyView(APIView):
 
     def update_currency(self, currency):
-        converter = "{}_{}".format(currency.currency_from, currency.currency_to)
-        url = "http://free.currencyconverterapi.com/api/v5/convert?q={}_{}&compact=y".format(
+        converter = "{}_{}".format(
+            currency.currency_from, currency.currency_to)
+        url = "http://free.currencyconverterapi.com/api/v5/convert?q={}_{}&compact=y&apiKey={}".format(
             currency.currency_from,
-            currency.currency_to
+            currency.currency_to,
+            CURRENCY_API_KEY
         )
         response = requests.get(url)
         value = response.json().get(converter).get("val")
@@ -146,10 +155,12 @@ class CurrencyView(APIView):
         return currency
 
     def get(self, request, **kwargs):
-        currency_from, currency_to = request.GET.get("from"), request.GET.get("to")
+        currency_from, currency_to = request.GET.get(
+            "from"), request.GET.get("to")
         if not currency_from or not currency_to:
             return Response({"message": "currency_from and currency_to are required arguments"}, status=status.HTTP_400_BAD_REQUEST)
-        currency = get_object_or_404(Currency, currency_from=currency_from, currency_to=currency_to)
+        currency = get_object_or_404(
+            Currency, currency_from=currency_from, currency_to=currency_to)
         if not currency.timestamp or currency.timestamp + timezone.timedelta(hours=1) < timezone.now():
             currency = self.update_currency(currency)
         return Response({"value": currency.value}, status=status.HTTP_200_OK)

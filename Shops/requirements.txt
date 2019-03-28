@@ -21,3 +21,4 @@ django-cors-headers==2.4.0
 redis==2.10.6
 zappa==0.48.2
 django-s3-storage==0.12.4
+python-decouple==3.1

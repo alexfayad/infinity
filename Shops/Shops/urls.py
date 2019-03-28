@@ -9,6 +9,7 @@ from core.views import ProductsView, ShopView, CategoriesView, LinksView, Produc
 urlpatterns = [
     path('api/admin/', admin.site.urls),
     path('api/product/', cache_page(60 * 5)(ProductsView.as_view())),
+    # path('api/product/', ProductsView.as_view()),
     path('api/shop/', cache_page(60 * 5)(ShopView.as_view())),
     path('api/categories/', CategoriesView.as_view()),
     path('api/map_categories/', MapSubcategoriesView.as_view()),

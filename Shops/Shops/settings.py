@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,12 +20,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'oxr#QHz4TRbqMw8G8(Hs{/p=HeR+m9fV'
+SECRET_KEY = config('SECRET_KEY', default='oxr#QHz4TRbqMw8G82uujfdsf213321')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('DEBUG', True))
+DEBUG = config('DEBUG', default=True)
 
-ALLOWED_HOSTS = ['*', '127.0.0.1', 'localhost', 'Shops.fbmqgxuxev.us-west-2.elasticbeanstalk.com', 'infinity.supply', 'infinity-redis.aawqsi.ng.0001.usw2.cache.amazonaws.com:6379']
+ALLOWED_HOSTS = [
+    '*',
+    '127.0.0.1',
+    'localhost',
+    'Shops.fbmqgxuxev.us-west-2.elasticbeanstalk.com',
+    'infinity.supply',
+]
 
 # Application definition
 
@@ -46,18 +53,6 @@ INSTALLED_APPS = [
     'django_s3_storage',
 ]
 
-YOUR_S3_BUCKET = "zappa-1o7we1h38"
-
-STATICFILES_STORAGE = "django_s3_storage.storage.StaticS3Storage"
-AWS_S3_BUCKET_NAME_STATIC = YOUR_S3_BUCKET
-
-# These next two lines will serve the static files directly
-# from the s3 bucket
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % YOUR_S3_BUCKET
-STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
-
-# OR...if you create a fancy custom domain for your static files use:
-#AWS_S3_PUBLIC_URL_STATIC = "https://static.zappaguide.com/"
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -148,7 +143,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "staticfiles"),
-    "/Users/alexanderfayad/Documents/infinity/Shops/staticfiles/",
 ]
 
 STATICFILES_FINDERS = (
@@ -165,21 +159,25 @@ CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
         'LOCATION': [
-            "redis://infinity-redis-001.aawqsi.0001.usw2.cache.amazonaws.com:6379",
+            config("REDIS_LOCATION", default="redis://127.0.0.1:6379/1")
         ],
         'OPTIONS': {
             'DB': 0,
-            'MASTER_CACHE': "infinity-redis-001.aawqsi.0001.usw2.cache.amazonaws.com:6379"
+            'MASTER_CACHE': config("MASTER_CACHE", default="redis://127.0.0.1:6379/1")
         },
     }
 }
 
-BROKER_URL = 'django://'
-CELERY_BROKER_URL = 'redis://localhost'
-CELERY_RESULT_BACKEND = 'django-db'
+CELERY_BROKER_URL = config('CELERY_BROKER_URL', default='redis://localhost:6379') 
+CELERY_RESULT_BACKEND = config('CELERY_RESULT_BACKEND', default='redis://localhost:6379')
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = TIME_ZONE
+
 
 CELERY_CONFIGURATION = {
-    'broker_url': 'redis://localhost:6379/2',
+    'broker_url': config('CELERY_BROKER_URL', default='redis://localhost:6379') ,
     'beat_scheduler': "django_celery_beat.schedulers:DatabaseScheduler",
     'beat_schedule': {
         'parsing': {
@@ -192,3 +190,7 @@ CELERY_CONFIGURATION = {
 }
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# API keys
+CURRENCY_API_KEY = config('CURRENCY_API_KEY')
+from Shops.aws.conf import *  # noqa
