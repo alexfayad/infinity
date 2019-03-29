@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY', default='oxr#QHz4TRbqMw8G82uujfdsf213321')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = config('DEBUG', default=True)
+# DEBUG = config("DEBUG", default=True)
 DEBUG = False
 
 ALLOWED_HOSTS = [
@@ -104,16 +104,16 @@ if not DEBUG:
         }
     }
 else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': config("LOCAL_DATABASE_NAME", default="name"),
-            'USER': config("LOCAL_DATABASE_USER", default="user"),
-            'PASSWORD': config("LOCAL_DATABASE_PASSWORD", default="password"),
-            'HOST': 'localhost',
-            'PORT': 5432,
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': config("LOCAL_DATABASE_NAME", default="name"),
+                'USER': config("LOCAL_DATABASE_USER", default="user"),
+                'PASSWORD': config("LOCAL_DATABASE_PASSWORD", default="password"),
+                'HOST': 'localhost',
+                'PORT': 5432,
+            }
         }
-    }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -169,8 +169,9 @@ CACHES = {
             config("REDIS_LOCATION", default="redis://127.0.0.1:6379/1")
         ],
         'OPTIONS': {
-            'DB': 0,
-            'MASTER_CACHE': config("MASTER_CACHE", default="redis://127.0.0.1:6379/1")
+            # 'DB': 0,
+            # 'MASTER_CACHE': config("MASTER_CACHE", default="redis://127.0.0.1:6379/1"),
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient'
         },
     }
 }
@@ -201,4 +202,4 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # API keys
 CURRENCY_API_KEY = config('CURRENCY_API_KEY')
 
-# from Shops.aws.conf import *  # noqa
+from Shops.aws.conf import *  # noqa
