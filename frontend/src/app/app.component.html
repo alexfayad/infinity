@@ -1,6 +1,4 @@
 <div class="container">
-
-  <!--Start of header-->
   <div class="row pb-4">
     <div class="col-3 d-flex align-items-center">
       <img
@@ -9,16 +7,7 @@
         [routerLink]="['/']"
       />
     </div>
-
-    <div class="col-7">
-        Hi {{ user.username }}!
-        <p><a href="{% url 'logout' %}">logout</a></p>
-
-        <p>You are not logged in</p>
-        <a href="{% url 'login' %}">login</a>
-        <a href="{% url 'signup' %}">sign up</a>
-    </div>
-
+    <div class="col-7"></div>
     <div class="col-2 d-flex align-items-center flex-row flex-nowrap align-items-center">
       <h4 class="font-italic mr-1">
         Currency:
@@ -34,8 +23,6 @@
       </ng-select>
     </div>
   </div>
-  <!--End of header-->
-
   <div class="row d-flex">
     <div class="col-lg-2 col-xs-12">
       <div class="row d-flex menu-item-block">
