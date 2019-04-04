@@ -1,0 +1,29 @@
+body {
+  background-color: AliceBlue;
+  padding: 20px 30px 20px 30px;
+}
+
+.first-paragraph{
+  text-align: left;
+  padding-left: 20%;
+}
+.second-paragraph{
+  text-align: left;
+  padding-right: 20%;
+}
+.third-paragraph{
+  text-align: left;
+  padding-left: 30%;
+  padding-right: 10%;
+}
+.title-text{
+  text-align: right;
+  padding-right: 80%;
+}
+
+.title-text:hover{
+  text-align: right;
+  padding-right: 80%;
+  color: grey;
+  user-select: none;
+}
