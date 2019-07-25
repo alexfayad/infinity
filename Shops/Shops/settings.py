@@ -24,7 +24,7 @@ SECRET_KEY = config('SECRET_KEY', default='oxr#QHz4TRbqMw8G82uujfdsf213321')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = config("DEBUG", default=True)
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '*',
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'django_filters',
     'core',
     'django_celery_results',
@@ -107,9 +108,9 @@ else:
         DATABASES = {
             'default': {
                 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-                'NAME': config("LOCAL_DATABASE_NAME", default="name"),
-                'USER': config("LOCAL_DATABASE_USER", default="user"),
-                'PASSWORD': config("LOCAL_DATABASE_PASSWORD", default="password"),
+                'NAME': config("LOCAL_DATABASE_NAME", default="infinity"),
+                'USER': config("LOCAL_DATABASE_USER", default="snake"),
+                'PASSWORD': config("LOCAL_DATABASE_PASSWORD", default="snake"),
                 'HOST': 'localhost',
                 'PORT': 5432,
             }
@@ -159,7 +160,10 @@ STATICFILES_DIRS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',),
-    'DEFAULT_RENDERER_CLASSES': ('rest_framework.renderers.JSONRenderer',)
+    'DEFAULT_RENDERER_CLASSES': ('rest_framework.renderers.JSONRenderer',),
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
 }
 
 CACHES = {
@@ -200,6 +204,7 @@ CELERY_CONFIGURATION = {
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # API keys
-CURRENCY_API_KEY = config('CURRENCY_API_KEY')
+#CURRENCY_API_KEY = config('CURRENCY_API_KEY')
+CURRENCY_API_KEY = 'sfklsfslkdjfsldf'
 
 from Shops.aws.conf import *  # noqa

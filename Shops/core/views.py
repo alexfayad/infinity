@@ -12,7 +12,7 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
-
+from rest_framework.permissions import IsAuthenticated
 
 from django.conf import settings
 
@@ -93,6 +93,7 @@ class ProductsView(generics.ListAPIView):
 
 
 class ShopView(APIView):
+
     def get(self, request, *args, **kwargs):
         # parse.delay()
         data = [{"shop_name": shop, "verbose_name": verbose}

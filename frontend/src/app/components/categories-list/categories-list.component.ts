@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import {Categories} from '../../interfaces/categories';
 
 @Component({
   selector: 'app-categories-list',

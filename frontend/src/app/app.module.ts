@@ -15,7 +15,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { UnderscoreKillerPipe } from './pipes/underscore-killer.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CurrencyChangePipe } from './pipes/currency-change.pipe';
 
 @NgModule({
@@ -39,7 +39,8 @@ import { CurrencyChangePipe } from './pipes/currency-change.pipe';
     FontAwesomeModule,
     InfiniteScrollModule,
     NgSelectModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

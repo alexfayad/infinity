@@ -7,6 +7,7 @@ import { ProductParams, ProductResponse, ShopResponse } from '../interfaces/comm
 import { map } from 'rxjs/operators';
 import urls from '../constants/urls';
 import { Shop } from '../interfaces/shop';
+import {AuthService} from "./auth.service";
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,7 @@ export class ApiService {
 
   constructor(
     private http: HttpClient,
+    private auth: AuthService,
   ) {
   }
 
@@ -33,10 +35,11 @@ export class ApiService {
   }
 
   getCategories(): Observable<Categories[]> {
-    return this.http.get<ShopResponse>(urls.SHOPS)
+   return this.http.get<ShopResponse>(urls.SHOPS)
       .pipe(
         map((response: ShopResponse) => response.categories)
       );
+
   }
 
   getFilteredProducts(params: ProductParams = {}): Observable<ProductResponse> {

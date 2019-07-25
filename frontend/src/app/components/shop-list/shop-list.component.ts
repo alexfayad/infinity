@@ -9,7 +9,8 @@ import { Shop } from '../../interfaces/shop';
 export class ShopListComponent {
   @Input() shops: Shop[];
   @Input() gender: 'M' | 'W';
-
+  @Input() shopname: any;
   constructor() {
   }
+
 }

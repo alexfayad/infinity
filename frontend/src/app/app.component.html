@@ -1,99 +1,360 @@
-<div class="container">
-  <div class="row pb-4">
-    <div class="col-3 d-flex align-items-center">
-      <img
-        src="https://infinityonline.ca/wp-content/uploads/2018/06/InfinityHeaderLogo-copy1.png"
-        class="logo-img"
-        [routerLink]="['/']"
-      />
-    </div>
-    <div class="col-7"></div>
-    <div class="col-2 d-flex align-items-center flex-row flex-nowrap align-items-center">
-      <h4 class="font-italic mr-1">
-        Currency:
-      </h4>
-      <ng-select
-        [ngModel]="currentCurrency | async"
-        [items]="currency"
-        bindValue="code"
-        class="custom"
-        [clearable]="false"
-        (change)="changeCurrency($event)"
-      >
-      </ng-select>
-    </div>
-  </div>
-  <div class="row d-flex">
-    <div class="col-lg-2 col-xs-12">
-      <div class="row d-flex menu-item-block">
-
-        <div class="col-lg-12 col-xs-2">
-          <a
-            (click)="openMenuForItem('mens')"
-            class="menu-item-name"
-          >
-            Mens
-          </a>
-          <div *ngIf="activeMenuItem === 'mens'" class="pl-2">
-            <app-shop-list [gender]="'M'" [shops]="shops"></app-shop-list>
-          </div>
-        </div>
-
-        <div class="col-lg-12 col-xs-2">
-          <a
-            (click)="openMenuForItem('womens')"
-            class="menu-item-name"
-          >
-            Womens
-          </a>
-          <div *ngIf="activeMenuItem === 'womens'" class="pl-2">
-            <app-shop-list [gender]="'W'" [shops]="shops"></app-shop-list>
-          </div>
-        </div>
-
-        <div class="col-lg-12 col-xs-2">
-          <div>
-            <a
-              class="menu-item-name"
-              (click)="openMenuForItem('shops')"
-            >
-              Stores
-            </a>
-            <div *ngIf="activeMenuItem === 'shops'" class="pl-2">
-              <app-shop-list [shops]="shops"></app-shop-list>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-12 col-xs-2">
-          <div>
-            <a class="menu-item-name" [routerLink]="['/', 'about']">
-              About us
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-12 col-xs-2">
-          <div>
-            <a class="menu-item-name" [routerLink]="['/', 'faq']">
-              FAQ
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-12 col-xs-2">
-          <div>
-            <a
-              class="menu-item-name"
-              [routerLink]="['/', 'contact']"
-            >
-              Contact
-            </a>
-          </div>
-        </div>
+<div class="wrapper">
+         <!-- Sidebar  -->
+   <nav id="sidebar">
+      <div class="sidebar-header">
+         <a href="#"><img src="../assets/images/Infinity_logo.png" alt=""></a>
       </div>
-    </div>
+      <ul class="list-unstyled components">
+         <li class="active">
+            <a href="#brands" data-toggle="collapse" id="brands_menu" aria-expanded="true" class="dropdown-toggle"> <span><img src="../assets/images/brand.svg" alt=""></span>Brands</a>
+            <ul class="collapse list-unstyled show" id="brands">
+               <app-shop-list [shops]="shops"></app-shop-list>
+            </ul>
+         </li>
+         <li>
+            <a href="#"><span><img src="../assets/images/category.svg" alt=""></span> Categories <span class="add"><img src="../assets/images/add.svg" alt=""></span></a>
+         </li>
+         <hr>
+         <li>
+            <a [routerLink]="['/', 'about']"><span><img src="../assets/images/about_us.svg" alt=""></span> About US</a>
+         </li>
+         <li>
+            <a [routerLink]="['/', 'faq']"><span><img src="../assets/images/FAQ.svg" alt=""></span> FAQ</a>
+         </li>
+         <li>
+            <a [routerLink]="['/', 'contact']"><span><img src="../assets/images/Contact_us.svg" alt=""></span> Contact</a>
+         </li>
+      </ul>
+   </nav>
+   <!-- Page Content  -->
+   <div id="content">
+      <!--Mobile menu start here -->
+      <div class="mobile_menu">
+         <nav class="navbar navbar-expand-md navbar-dark fixed-top_mob bg-dark">
+            <a class="navbar-brand mr-auto" href="#"><img src="../assets/images/Infinity_logo.png" alt=""></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+               <div class="nav_main">
+                  <div class="user-image">
+                     <a href="#"> <img src="../assets/images/profile-icon.png" alt=""></a>
+                  </div>
+                  <div class="user-links">
+                     <a href="#">Log In</a>
+                     <span class="dot">.</span>
+                     <a href="#">Sign Up</a>
+                     <a class="pull-right" href="">
+                     </a>
+                  </div>
+                  <div class="menu_main">
+                     <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li>
+                          <a href="#"><span>About US</span></a>
+                        </li>
+                        <li>
+                           <a href="#"> FAQ</a>
+                        </li>
+                        <li>
+                           <a href="#"> Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <!--Mobile menu start here -->
+      <!-- top header start here -->
+      <header class="fixed-top">
+         <div class="menu_main">
+            <ul>
+               <li class="active"><a href="">Men</a></li>
+               <li><a href="#">Women</a></li>
+            </ul>
+         </div>
+         <div class="wishlist_sec_right">
+            <ul>
+               <li>
+                  Wishlist
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="48.462" viewBox="0 0 49 48.462">
+                     <defs>
+                        <filter id="Path_15" x="0" y="0" width="49" height="48.462" filterUnits="userSpaceOnUse">
+                           <feOffset dy="3" input="SourceAlpha"/>
+                           <feGaussianBlur stdDeviation="5" result="blur"/>
+                           <feFlood flood-opacity="0.102"/>
+                           <feComposite operator="in" in2="blur"/>
+                           <feComposite in="SourceGraphic"/>
+                        </filter>
+                     </defs>
+                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_15)">
+                        <g id="Path_15-2" data-name="Path 15" transform="translate(15 11)" fill="#3d3f53">
+                           <path d="M 9.49744987487793 18.11248016357422 L 8.826820373535156 17.50197982788086 L 7.739319801330566 16.5119800567627 L 7.731249809265137 16.50465965270996 C 5.80778980255127 14.76047992706299 4.146639823913574 13.254150390625 2.980809926986694 11.82796001434326 C 1.629420042037964 10.1747407913208 1 8.680340766906738 1 7.125000476837158 C 1 5.740670204162598 1.528849959373474 4.449430465698242 2.489140033721924 3.489140272140503 C 3.449429988861084 2.528850317001343 4.740670204162598 2.000000476837158 6.125 2.000000476837158 C 7.340481758117676 2.000000476837158 8.543758392333984 2.431886434555054 9.5 3.186654806137085 C 10.45624160766602 2.431886434555054 11.65951824188232 2.000000476837158 12.875 2.000000476837158 C 14.2593297958374 2.000000476837158 15.55056953430176 2.528850317001343 16.51086044311523 3.489140272140503 C 17.47114944458008 4.449430465698242 18 5.740670204162598 18 7.125000476837158 C 18 8.677730560302734 17.37262916564941 10.1699104309082 16.02561950683594 11.82100009918213 C 14.86349964141846 13.24547004699707 13.20732975006104 14.75050067901611 11.28964042663574 16.49316024780273 L 11.26002979278564 16.52007102966309 L 10.17037963867188 17.50452041625977 L 9.49744987487793 18.11248016357422 Z" stroke="none"/>
+                           <path d="M 9.5 16.76250076293945 L 10.58749961853027 15.78000068664551 C 14.44999980926514 12.27000045776367 17 9.960000038146973 17 7.125000476837158 C 17 4.815000534057617 15.1850004196167 3.000000476837158 12.875 3.000000476837158 C 11.56999969482422 3.000000476837158 10.31750011444092 3.607500314712524 9.5 4.567500591278076 C 8.682499885559082 3.607500314712524 7.429999828338623 3.000000476837158 6.125 3.000000476837158 C 3.815000057220459 3.000000476837158 2 4.815000534057617 2 7.125000476837158 C 2 9.960000038146973 4.550000190734863 12.27000045776367 8.412500381469727 15.77250003814697 L 9.5 16.76250076293945 M 9.494890213012695 19.46245956420898 L 8.153639793395996 18.2414608001709 L 7.066140174865723 17.25146102905273 L 7.059510231018066 17.24545097351074 C 2.961139917373657 13.52907085418701 0 10.84392070770264 0 7.125000476837158 C 0 5.473560333251953 0.6328700184822083 3.931200265884399 1.782039999961853 2.782040357589722 C 2.93120002746582 1.632870435714722 4.473559856414795 1.000000357627869 6.125 1.000000357627869 C 7.312149047851563 1.000000357627869 8.489059448242188 1.347333550453186 9.5 1.96978771686554 C 10.51094055175781 1.347333550453186 11.68785095214844 1.000000357627869 12.875 1.000000357627869 C 14.52643966674805 1.000000357627869 16.06879997253418 1.632870435714722 17.21796035766602 2.782040357589722 C 18.36713027954102 3.931200265884399 19 5.473560333251953 19 7.125000476837158 C 19 10.83771991729736 16.04795074462891 13.52035045623779 11.9621696472168 17.23324012756348 L 11.93255996704102 17.26013946533203 L 11.93041038513184 17.2620906829834 L 11.92825031280518 17.26403999328613 L 10.84074974060059 18.24654006958008 L 9.494890213012695 19.46245956420898 Z" stroke="none" fill="#fff"/>
+                        </g>
+                     </g>
+                  </svg>
+                  <span class="sl-count">0</span>
+               </li>
+               <li>
+                  <ng-select
+                  [ngModel]="currentCurrency | async"
+                  [items]="currency"
+                  bindValue="code"
+                  [clearable]="false"
+                  (change)="changeCurrency($event)"
+                >
+               </ng-select>
+               </li>
+               <li>
+                  <button type="button" (click)="login_modal = true" class="btn btn-primary btn_custom" data-toggle="modal" data-target="#login_modal">Log In</button>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <!-- top header start here -->
+      <!-- product section start here -->
+     <router-outlet></router-outlet>
 
-    <div class="col-lg-9 col-xs-12"><router-outlet></router-outlet></div>
+</div>
+
+<!--  Modal Starts  --->
+  <!--  welcome Modal Starts  --->
+
+  <div *ngIf="video_modal" style="display:block;" class="modal fade show" id="video_modal" tabindex="-1" role="dialog" aria-labelledby="video_modal" aria-hidden="true">
+     <div class="modal-dialog welcome_madal" role="document">
+        <div class="modal-content">
+           <div class="modal-header">
+              <button type="button"  (click)="video_modal = false" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+           </div>
+           <div class="modal-body">
+              <h4>Welcome to infinity.supply</h4>
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                 <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                 </ol>
+                 <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       <span><img src="../assets/images/play.svg" alt=""></span>
+                       <img src="../assets/images/video.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                       <span><img src="../assets/images/play.svg" alt=""></span>
+                       <img src="../assets/images/video.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                       <span><img src="../assets/images/play.svg" alt=""></span>
+                       <img src="../assets/images/video.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                       <span><img src="../assets/images/play.svg" alt=""></span>
+                       <img src="../assets/images/video.png" alt="">
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="modal-footer">
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="Skip">
+              <span class="">Skip</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+              <span class="">Next</span>
+              </a>
+           </div>
+        </div>
+     </div>
   </div>
+  <!-- welcome modal close here -->
+  <!-- Login modal start here -->
+  <div *ngIf="login_modal" class="modal  show" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal_custom" role="document">
+        <div class="modal-content">
+           <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+           </div>
+           <div class="modal-body">
+              <h4>Sign In</h4>
+              <form [formGroup]="LoginForm" (ngSubmit)="onSubmit()">
+                 <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" formControlName="username" required="required" placeholder="Your Name Here">
+                 </div>
+                 <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" formControlName="password" required="required" placeholder="************">
+                 </div>
+                 <div class="form-group">
+                    <p class="hint-text"><a href="#">Forgot Password?</a></p>
+                 </div>
+                 <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Login">
+                 </div>
+                 <div class="form-group">
+                    <div class="no_account">Doesn't have an Account? <a href="#">Sign Up</a></div>
+                 </div>
+              </form>
+           </div>
+        </div>
+     </div>
+  </div>
+  <!-- Login modal close here -->
+  <!-- Sign Up modal start here -->
+  <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal_custom" role="document">
+        <div class="modal-content">
+           <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+           </div>
+           <div class="modal-body">
+              <h4>Sign Up</h4>
+              <form>
+                 <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" required="required" placeholder="Your Name Here">
+                 </div>
+                 <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" required="required" placeholder="kabboliate@gmail.com">
+                 </div>
+                 <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" required="required" placeholder="************">
+                 </div>
+                 <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" class="form-control" required="required" placeholder="************">
+                 </div>
+                 <div class="form-group">
+                    <p class="hint-text"><a href="#">Forgot Password?</a></p>
+                 </div>
+                 <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                 </div>
+                 <div class="form-group">
+                    <div class="no_account">Doesn't have an Account? <a href="#">Sign In</a></div>
+                 </div>
+              </form>
+           </div>
+        </div>
+     </div>
+  </div>
+  <!-- Sign Up modal close here -->
+  <!-- Lets See What You Are Interested In! modal start here -->
+  <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal_interested" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4>Lets See What You Are Interested In!</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="multipul_brand">
+                     <ul>
+                        <li>
+                           <div class="brand_logo"><img src="../assets/images/adidas.png" alt=""></div>
+                           <div class="form-check">
+                              <label>
+                              <input type="radio" name="radio" checked> <span class="label-text">Adidas</span>
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="brand_logo"><img src="../assets/images/boss.png" alt=""></div>
+                           <div class="form-check">
+                              <label>
+                              <input type="radio" name="radio"> <span class="label-text">Boss</span>
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="brand_logo"><img src="../assets/images/levis.png" alt=""></div>
+                           <div class="form-check">
+                              <label>
+                              <input type="radio" name="radio"> <span class="label-text">Levi's</span>
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="brand_logo"><img src="../assets/images/adidas.png" alt=""></div>
+                           <div class="form-check">
+                              <label>
+                              <input type="radio" name="radio"> <span class="label-text">Adidas</span>
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="brand_logo"><img src="../assets/images/boss.png" alt=""></div>
+                           <div class="form-check">
+                              <label>
+                              <input type="radio" name="radio" checked> <span class="label-text">Boss</span>
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="brand_logo"><img src="../assets/images/adidas.png" alt=""></div>
+                           <div class="form-check">
+                              <label>
+                              <input type="radio" name="radio" checked> <span class="label-text">Adidas</span>
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="brand_logo"><img src="../assets/images/boss.png" alt=""></div>
+                           <div class="form-check">
+                              <label>
+                              <input type="radio" name="radio"> <span class="label-text">Boss</span>
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="brand_logo"><img src="../assets/images/levis.png" alt=""></div>
+                           <div class="form-check">
+                              <label>
+                              <input type="radio" name="radio"> <span class="label-text">Levi's</span>
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="brand_logo"><img src="../assets/images/adidas.png" alt=""></div>
+                           <div class="form-check">
+                              <label>
+                              <input type="radio" name="radio"> <span class="label-text">Adidas</span>
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="brand_logo"><img src="../assets/images/boss.png" alt=""></div>
+                           <div class="form-check">
+                              <label>
+                              <input type="radio" name="radio" > <span class="label-text">Boss</span>
+                              </label>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="form-group">
+                     <button type="submit" class="btn btn-primary">Continue</button>
+                  </div>
+                  <div class="form-group">
+                     <div class="no_account"> <a href="#">Skip</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+<!--- Modal Ends here -->
 </div>
