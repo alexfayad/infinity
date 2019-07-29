@@ -96,11 +96,11 @@ if not DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': config("DATABASE_NAME", default="name"),
-            'USER': config("DATABASE_USER", default="user"),
-            'PASSWORD': config("DATABASE_PASSWORD", default="password"),
-            'HOST': config("DATABASE_HOST", default="host"),
-            'PORT': '5432',
+            'NAME': 'inifinity',
+            'USER': 'infinity',
+            'PASSWORD': 'infinity@snakescript',
+            'HOST': 'localhost',
+            'PORT': 5432,
         }
     }
 else:
