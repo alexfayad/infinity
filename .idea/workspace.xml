@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3695bf37-a43d-478c-a00c-9a63eb741f4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Shops/Shops/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/Shops/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +126,7 @@
       <workItem from="1564138549271" duration="657000" />
       <workItem from="1564139374560" duration="3555000" />
       <workItem from="1564222404255" duration="36000" />
-      <workItem from="1564377372778" duration="7797000" />
+      <workItem from="1564377372778" duration="7999000" />
     </task>
     <servers />
   </component>
