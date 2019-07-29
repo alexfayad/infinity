@@ -24,7 +24,7 @@ SECRET_KEY = config('SECRET_KEY', default='oxr#QHz4TRbqMw8G82uujfdsf213321')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = config("DEBUG", default=True)
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '*',
@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
     'localhost',
     'Shops.fbmqgxuxev.us-west-2.elasticbeanstalk.com',
     'infinity.supply',
+    '159.65.220.179',
 ]
 
 # Application definition
