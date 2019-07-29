@@ -100,7 +100,7 @@ if not DEBUG:
             'USER': config("DATABASE_USER", default="user"),
             'PASSWORD': config("DATABASE_PASSWORD", default="password"),
             'HOST': config("DATABASE_HOST", default="host"),
-            'PORT': config("DATABASE_PORT", default="port"),
+            'PORT': '5432',
         }
     }
 else:
