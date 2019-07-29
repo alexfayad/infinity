@@ -52,7 +52,6 @@ INSTALLED_APPS = [
     'django_celery_beat',
     'corsheaders',
     'Shops',
-    'django_s3_storage',
 ]
 
 

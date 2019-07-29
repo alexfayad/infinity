@@ -11,7 +11,7 @@ import {Currency, currencyItems} from 'src/app/constants/currency';
 import {Observable} from 'rxjs';
 import {CurrencyService} from 'src/app/services/currency.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +19,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  assets_url = environment.assets_url;
   faCoffee = faInfinity;
   nextPage: string;
   products: Product[] = [];

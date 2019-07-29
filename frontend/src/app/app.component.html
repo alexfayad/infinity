@@ -2,27 +2,27 @@
          <!-- Sidebar  -->
    <nav id="sidebar">
       <div class="sidebar-header">
-         <a href="#"><img src="../assets/images/Infinity_logo.png" alt=""></a>
+         <a href="#"><img src="{{assets_url}}/images/Infinity_logo.png" alt=""></a>
       </div>
       <ul class="list-unstyled components">
          <li class="active">
-            <a href="#brands" data-toggle="collapse" id="brands_menu" aria-expanded="true" class="dropdown-toggle"> <span><img src="../assets/images/brand.svg" alt=""></span>Brands</a>
+            <a href="#brands" data-toggle="collapse" id="brands_menu" aria-expanded="true" class="dropdown-toggle"> <span><img src="{{assets_url}}/images/brand.svg" alt=""></span>Brands</a>
             <ul class="collapse list-unstyled show" id="brands">
                <app-shop-list [shops]="shops"></app-shop-list>
             </ul>
          </li>
          <li>
-            <a href="#"><span><img src="../assets/images/category.svg" alt=""></span> Categories <span class="add"><img src="../assets/images/add.svg" alt=""></span></a>
+            <a href="#"><span><img src="{{assets_url}}/images/category.svg" alt=""></span> Categories <span class="add"><img src="{{assets_url}}/images/add.svg" alt=""></span></a>
          </li>
          <hr>
          <li>
-            <a [routerLink]="['/', 'about']"><span><img src="../assets/images/about_us.svg" alt=""></span> About US</a>
+            <a [routerLink]="['/', 'about']"><span><img src="{{assets_url}}/images/about_us.svg" alt=""></span> About US</a>
          </li>
          <li>
-            <a [routerLink]="['/', 'faq']"><span><img src="../assets/images/FAQ.svg" alt=""></span> FAQ</a>
+            <a [routerLink]="['/', 'faq']"><span><img src="{{assets_url}}/images/FAQ.svg" alt=""></span> FAQ</a>
          </li>
          <li>
-            <a [routerLink]="['/', 'contact']"><span><img src="../assets/images/Contact_us.svg" alt=""></span> Contact</a>
+            <a [routerLink]="['/', 'contact']"><span><img src="{{assets_url}}/images/Contact_us.svg" alt=""></span> Contact</a>
          </li>
       </ul>
    </nav>
@@ -31,14 +31,14 @@
       <!--Mobile menu start here -->
       <div class="mobile_menu">
          <nav class="navbar navbar-expand-md navbar-dark fixed-top_mob bg-dark">
-            <a class="navbar-brand mr-auto" href="#"><img src="../assets/images/Infinity_logo.png" alt=""></a>
+            <a class="navbar-brand mr-auto" href="#"><img src="{{assets_url}}/images/Infinity_logo.png" alt=""></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="navbarCollapse" style="">
                <div class="nav_main">
                   <div class="user-image">
-                     <a href="#"> <img src="../assets/images/profile-icon.png" alt=""></a>
+                     <a href="#"> <img src="{{assets_url}}/images/profile-icon.png" alt=""></a>
                   </div>
                   <div class="user-links">
                      <a href="#">Log In</a>
@@ -143,20 +143,20 @@
                  </ol>
                  <div class="carousel-inner">
                     <div class="carousel-item active">
-                       <span><img src="../assets/images/play.svg" alt=""></span>
-                       <img src="../assets/images/video.png" alt="">
+                       <span><img src="{{assets_url}}/images/play.svg" alt=""></span>
+                       <img src="{{assets_url}}/images/video.png" alt="">
                     </div>
                     <div class="carousel-item">
-                       <span><img src="../assets/images/play.svg" alt=""></span>
-                       <img src="../assets/images/video.png" alt="">
+                       <span><img src="{{assets_url}}/images/play.svg" alt=""></span>
+                       <img src="{{assets_url}}/images/video.png" alt="">
                     </div>
                     <div class="carousel-item">
-                       <span><img src="../assets/images/play.svg" alt=""></span>
-                       <img src="../assets/images/video.png" alt="">
+                       <span><img src="{{assets_url}}/images/play.svg" alt=""></span>
+                       <img src="{{assets_url}}/images/video.png" alt="">
                     </div>
                     <div class="carousel-item">
-                       <span><img src="../assets/images/play.svg" alt=""></span>
-                       <img src="../assets/images/video.png" alt="">
+                       <span><img src="{{assets_url}}/images/play.svg" alt=""></span>
+                       <img src="{{assets_url}}/images/video.png" alt="">
                     </div>
                  </div>
               </div>
@@ -265,7 +265,7 @@
                   <div class="multipul_brand">
                      <ul>
                         <li>
-                           <div class="brand_logo"><img src="../assets/images/adidas.png" alt=""></div>
+                           <div class="brand_logo"><img src="{{assets_url}}/images/adidas.png" alt=""></div>
                            <div class="form-check">
                               <label>
                               <input type="radio" name="radio" checked> <span class="label-text">Adidas</span>
@@ -273,7 +273,7 @@
                            </div>
                         </li>
                         <li>
-                           <div class="brand_logo"><img src="../assets/images/boss.png" alt=""></div>
+                           <div class="brand_logo"><img src="{{assets_url}}/images/boss.png" alt=""></div>
                            <div class="form-check">
                               <label>
                               <input type="radio" name="radio"> <span class="label-text">Boss</span>
@@ -281,7 +281,7 @@
                            </div>
                         </li>
                         <li>
-                           <div class="brand_logo"><img src="../assets/images/levis.png" alt=""></div>
+                           <div class="brand_logo"><img src="{{assets_url}}/images/levis.png" alt=""></div>
                            <div class="form-check">
                               <label>
                               <input type="radio" name="radio"> <span class="label-text">Levi's</span>
@@ -289,7 +289,7 @@
                            </div>
                         </li>
                         <li>
-                           <div class="brand_logo"><img src="../assets/images/adidas.png" alt=""></div>
+                           <div class="brand_logo"><img src="{{assets_url}}/images/adidas.png" alt=""></div>
                            <div class="form-check">
                               <label>
                               <input type="radio" name="radio"> <span class="label-text">Adidas</span>
@@ -297,7 +297,7 @@
                            </div>
                         </li>
                         <li>
-                           <div class="brand_logo"><img src="../assets/images/boss.png" alt=""></div>
+                           <div class="brand_logo"><img src="{{assets_url}}/images/boss.png" alt=""></div>
                            <div class="form-check">
                               <label>
                               <input type="radio" name="radio" checked> <span class="label-text">Boss</span>
@@ -305,7 +305,7 @@
                            </div>
                         </li>
                         <li>
-                           <div class="brand_logo"><img src="../assets/images/adidas.png" alt=""></div>
+                           <div class="brand_logo"><img src="{{assets_url}}/images/adidas.png" alt=""></div>
                            <div class="form-check">
                               <label>
                               <input type="radio" name="radio" checked> <span class="label-text">Adidas</span>
@@ -313,7 +313,7 @@
                            </div>
                         </li>
                         <li>
-                           <div class="brand_logo"><img src="../assets/images/boss.png" alt=""></div>
+                           <div class="brand_logo"><img src="{{assets_url}}/images/boss.png" alt=""></div>
                            <div class="form-check">
                               <label>
                               <input type="radio" name="radio"> <span class="label-text">Boss</span>
@@ -321,7 +321,7 @@
                            </div>
                         </li>
                         <li>
-                           <div class="brand_logo"><img src="../assets/images/levis.png" alt=""></div>
+                           <div class="brand_logo"><img src="{{assets_url}}/images/levis.png" alt=""></div>
                            <div class="form-check">
                               <label>
                               <input type="radio" name="radio"> <span class="label-text">Levi's</span>
@@ -329,7 +329,7 @@
                            </div>
                         </li>
                         <li>
-                           <div class="brand_logo"><img src="../assets/images/adidas.png" alt=""></div>
+                           <div class="brand_logo"><img src="{{assets_url}}/images/adidas.png" alt=""></div>
                            <div class="form-check">
                               <label>
                               <input type="radio" name="radio"> <span class="label-text">Adidas</span>
@@ -337,7 +337,7 @@
                            </div>
                         </li>
                         <li>
-                           <div class="brand_logo"><img src="../assets/images/boss.png" alt=""></div>
+                           <div class="brand_logo"><img src="{{assets_url}}/images/boss.png" alt=""></div>
                            <div class="form-check">
                               <label>
                               <input type="radio" name="radio" > <span class="label-text">Boss</span>

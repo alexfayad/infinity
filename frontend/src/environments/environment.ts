@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   apiUrl: 'http://127.0.0.1:8000/api/',
   vigLink: 'https://redirect.viglink.com',
-  vigKey: '3982fa502a2fc8ba008bebe81b46771c'
+  vigKey: '3982fa502a2fc8ba008bebe81b46771c',
+  assets_url : '../assets'
 };
 
 /*

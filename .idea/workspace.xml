@@ -2,364 +2,151 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3695bf37-a43d-478c-a00c-9a63eb741f4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/css/mystyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-bold-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-bold-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-bold-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-medium-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-medium-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-medium-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-medium-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-regular-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-regular-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-regular-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-semibold-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-semibold-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/poppins-semibold-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/Contact_us.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/FAQ.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/Infinity_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/Path 16.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/about_us.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/add.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/adidas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/boss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/brand.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/category.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/circle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/favorite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/levis.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/play.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/profile-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/radio_button_checked.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.angular-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.bash_logout" beforeDir="false" afterPath="$PROJECT_DIR$/.bash_logout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.bashrc" beforeDir="false" afterPath="$PROJECT_DIR$/.bashrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.envs" beforeDir="false" afterPath="$PROJECT_DIR$/.envs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.envs_export" beforeDir="false" afterPath="$PROJECT_DIR$/.envs_export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.fehbg" beforeDir="false" afterPath="$PROJECT_DIR$/.fehbg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/infinity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/infinity.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/css/mystyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-bold-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-bold-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-medium-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-medium-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-medium-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-medium-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-regular-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-regular-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-semibold-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-semibold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/fonts/poppins-semibold-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/Contact_us.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/FAQ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/Infinity_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/Path 16.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/about_us.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/adidas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/boss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/brand.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/category.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/favorite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/levis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/profile-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/radio_button_checked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/images/video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/static/ang/assets/js/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/css/mystyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-bold-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-bold-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-medium-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-medium-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-medium-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-medium-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-regular-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-regular-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-semibold-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-semibold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/fonts/poppins-semibold-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/Contact_us.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/FAQ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/Infinity_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/Path 16.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/about_us.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/adidas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/boss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/brand.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/category.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/favorite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/levis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/profile-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/radio_button_checked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/images/video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/assets/js/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/constants/static.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.profile" beforeDir="false" afterPath="$PROJECT_DIR$/.profile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/.ebextensions/01_packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/.ebextensions/01_packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/.ebextensions/02-python.config" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/.ebextensions/02-python.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/.ebextensions/django.config" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/.ebextensions/django.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/.ebextensions/elasticashe.config" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/.ebextensions/elasticashe.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/.ebextensions/files/celery_configuration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/.ebextensions/files/celery_configuration.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/Shops/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/Shops/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shops/Shops/aws/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/Shops/aws/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/Shops/celeryapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/Shops/celeryapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/Shops/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/Shops/dashboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shops/Shops/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/Shops/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/Shops/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/Shops/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/Shops/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/Shops/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/alex.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/alex.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/bitbucket-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/bitbucket-pipelines.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/management/commands/createsu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/management/commands/createsu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/management/commands/parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/management/commands/parse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0002_auto_20181019_2005.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0002_auto_20181019_2005.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0003_auto_20181019_2012.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0003_auto_20181019_2012.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0004_auto_20181019_2055.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0004_auto_20181019_2055.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0005_product_url_original.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0005_product_url_original.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0006_auto_20181020_1221.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0006_auto_20181020_1221.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0007_auto_20181020_1225.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0007_auto_20181020_1225.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0008_auto_20181020_1236.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0008_auto_20181020_1236.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0009_auto_20181028_1605.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0009_auto_20181028_1605.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0010_auto_20181028_1630.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0010_auto_20181028_1630.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0011_auto_20181028_1654.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0011_auto_20181028_1654.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0012_auto_20181028_1902.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0012_auto_20181028_1902.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0013_auto_20181108_2016.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0013_auto_20181108_2016.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0014_auto_20181113_1947.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0014_auto_20181113_1947.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0015_auto_20181118_1602.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0015_auto_20181118_1602.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0016_auto_20181124_2109.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0016_auto_20181124_2109.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0017_auto_20181125_1125.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0017_auto_20181125_1125.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0018_auto_20190203_1740.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0018_auto_20190203_1740.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0019_auto_20190209_1624.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0019_auto_20190209_1624.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0020_auto_20190320_1949.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0020_auto_20190320_1949.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0021_auto_20190320_1950.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0021_auto_20190320_1950.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/migrations/0022_auto_20190320_1952.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/migrations/0022_auto_20190320_1952.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/mixins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/grabber.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/grabber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/parsers/adidas_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/parsers/adidas_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/parsers/all_saints_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/parsers/all_saints_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/parsers/asos_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/parsers/asos_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/parsers/cham_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/parsers/cham_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/parsers/ck_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/parsers/ck_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/parsers/guess_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/parsers/guess_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/parsers/nike_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/parsers/nike_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/parsers/reebok_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/parsers/reebok_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/parsers/tommy_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/parsers/tommy_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/parsers/topman_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/parsers/topman_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/parsers/zara_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/parsers/zara_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/parser/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/parser/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/core/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/geckodriver.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/autocomplete.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/autocomplete.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/changelists.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/changelists.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/forms.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/responsive_rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/responsive_rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/vendor/select2/LICENSE-SELECT2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/vendor/select2/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/vendor/select2/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/vendor/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/vendor/select2/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/css/widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/css/widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/fonts/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/fonts/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/calendar-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/calendar-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/icon-addlink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/icon-addlink.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/icon-alert.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/icon-alert.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/icon-calendar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/icon-calendar.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/icon-changelink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/icon-changelink.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/icon-clock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/icon-clock.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/icon-deletelink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/icon-deletelink.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/icon-no.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/icon-no.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/icon-unknown-alt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/icon-unknown-alt.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/icon-unknown.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/icon-unknown.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/icon-viewlink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/icon-viewlink.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/icon-yes.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/icon-yes.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/inline-delete.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/inline-delete.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/search.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/selector-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/selector-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/sorting-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/sorting-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/tooltag-add.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/tooltag-add.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/img/tooltag-arrowright.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/img/tooltag-arrowright.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/SelectBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/SelectBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/SelectFilter2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/SelectFilter2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/actions.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/actions.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/autocomplete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/cancel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/cancel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/change_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/change_form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/collapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/collapse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/collapse.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/collapse.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/inlines.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/inlines.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/inlines.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/inlines.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/jquery.init.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/jquery.init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/popup_response.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/popup_response.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/prepopulate.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/prepopulate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/prepopulate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/prepopulate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/prepopulate_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/prepopulate_init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/timeparse.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/timeparse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/urlify.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/urlify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/jquery/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/km.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/zh-CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/i18n/zh-TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/select2.full.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/select2/select2.full.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/xregexp/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/xregexp/xregexp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/ang/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/ang/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/ang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/ang/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/ang/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/ang/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/css/bootstrap-theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/css/bootstrap-tweaks.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/css/bootstrap-tweaks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/css/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/css/font-awesome-4.0.3.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/css/font-awesome-4.0.3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/css/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/css/prettify.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/docs/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/docs/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/docs/css/highlight.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/docs/css/highlight.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/docs/css/jquery.json-view.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/docs/css/jquery.json-view.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/docs/js/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/docs/js/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/docs/js/highlight.pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/docs/js/highlight.pack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/docs/js/jquery.json-view.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/docs/js/jquery.json-view.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/js/ajax-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/js/ajax-form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/js/coreapi-0.1.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/js/coreapi-0.1.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/js/csrf.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/js/csrf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/js/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/js/default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/js/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/static/rest_framework/js/prettify-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/static/rest_framework/js/prettify-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/static/ang/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/static/ang/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/static/ang/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/static/ang/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/static/ang/polyfills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/static/ang/runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/static/ang/styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Shops/staticfiles/ang/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/staticfiles/ang/favicon.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Shops/staticfiles/ang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shops/staticfiles/ang/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shops/staticfiles/ang/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/staticfiles/ang/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shops/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shops/zappa_settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/zappa_settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy_backend.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy_backend.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy_frontend.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy_frontend.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angulardoc.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angulardoc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/bitbucket-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bitbucket-pipelines.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/e2e/protractor.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/e2e/src/app.po.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/tsconfig.e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/e2e/tsconfig.e2e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/categories-list/categories-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/categories-list/categories-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/categories-list/categories-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/categories-list/categories-list.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/categories-list/categories-list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/categories-list/categories-list.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/categories-list/categories-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/categories-list/categories-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/item-card/item-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/item-card/item-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/item-card/item-card.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/item-card/item-card.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/item-card/item-card.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/item-card/item-card.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/item-card/item-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/item-card/item-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/product-list/product-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/product-list/product-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/product-list/product-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/product-list/product-list.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/product-list/product-list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/product-list/product-list.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/product-list/product-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/product-list/product-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/shop-list/shop-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/shop-list/shop-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/shop-list/shop-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/shop-list/shop-list.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/shop-list/shop-list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/shop-list/shop-list.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/shop-list/shop-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/shop-list/shop-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/constants/currency.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/constants/currency.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/constants/urls.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/constants/urls.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/interfaces/categories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/interfaces/categories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/interfaces/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/interfaces/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/interfaces/faq.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/interfaces/faq.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/interfaces/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/interfaces/product.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/interfaces/shop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/interfaces/shop.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/about/about.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/about/about.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/about/about.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/about/about.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/about/about.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/contact/contact.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/contact/contact.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/contact/contact.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/contact/contact.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/contact/contact.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/contact/contact.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/faq/faq.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/faq/faq.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/faq/faq.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/faq/faq.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/faq/faq.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/faq/faq.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/main/main.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/main/main.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/main/main.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/main/main.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pipes/currency-change.pipe.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pipes/currency-change.pipe.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pipes/currency-change.pipe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pipes/currency-change.pipe.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pipes/underscore-killer.pipe.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pipes/underscore-killer.pipe.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pipes/underscore-killer.pipe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pipes/underscore-killer.pipe.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/api.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/api.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/currency.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/currency.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/currency.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/currency.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/browserslist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tslint.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -384,14 +171,15 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="77" />
-    <option name="y" value="19" />
-    <option name="width" value="1351" />
-    <option name="height" value="825" />
   </component>
   <component name="ProjectId" id="1OUxZAPCE6xo5h9Uar0G8xs3s2z" />
   <component name="ProjectLevelVcsManager">
@@ -402,7 +190,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../enzo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shops/static/ang" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -417,6 +205,9 @@
       <recent name="$PROJECT_DIR$/frontend/src/app/services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Shops/static/ang" />
+      <recent name="$PROJECT_DIR$/Shops/staticfiles/ang" />
+      <recent name="$PROJECT_DIR$/Shops/staticfiles" />
       <recent name="$PROJECT_DIR$/frontend/src/assets" />
     </key>
   </component>
@@ -433,6 +224,9 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/infinity/Shops/staticfiles/ang/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -442,6 +236,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -465,7 +264,12 @@
       <workItem from="1564031727798" duration="12535000" />
       <workItem from="1564046065615" duration="1473000" />
       <workItem from="1564047667668" duration="73000" />
-      <workItem from="1564047792747" duration="5254000" />
+      <workItem from="1564047792747" duration="5365000" />
+      <workItem from="1564137246049" duration="1253000" />
+      <workItem from="1564138549271" duration="657000" />
+      <workItem from="1564139374560" duration="3555000" />
+      <workItem from="1564222404255" duration="36000" />
+      <workItem from="1564377372778" duration="4642000" />
     </task>
     <servers />
   </component>

@@ -8,9 +8,20 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="favicon.png">
-<link rel="stylesheet" href="{% static 'ang/styles.css' %}"></head>
+
+    <!-- Bootstrap -->
+  <link href="{% static 'ang/assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- uikit-css -->
+    <!-- fontawsome-css -->
+  <link href="{% static 'ang/assets/css/font-awesome.css' %}" rel="stylesheet">
+    <!-- style-css -->
+  <link href="{% static 'ang/assets/css/mystyle.css' %}" rel="stylesheet">
+  <link href="{% static 'ang/assets/css/responsive.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'ang/styles.css' %}"></head>
 <body>
   <app-root></app-root>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="{% static 'ang/assets/js/bootstrap.bundle.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'ang/runtime.js' %}"></script>
     <script type="text/javascript" src="{% static 'ang/polyfills.js' %}"></script>
     <script type="text/javascript" src="{% static 'ang/main.js' %}"></script>
