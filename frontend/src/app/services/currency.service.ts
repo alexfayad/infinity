@@ -27,7 +27,7 @@ export class CurrencyService {
     private http: HttpClient
   ) {
     this.current = this._currentCurrency.asObservable();
-    this.getCoefficients();
+    //this.getCoefficients();
   }
 
   setCurrentCurrency(currency: Currency): void {
@@ -39,7 +39,7 @@ export class CurrencyService {
     return this.coefficients[this._currentCurrency.getValue()];
   }
 
-  getCoefficients(): void {
+  /*getCoefficients(): void {
     const requests: Observable<any>[] = [Currency.EUR, Currency.GBP, Currency.USD].map(currency => {
       return this.http.get(`${API_URL}currency/?from=CAD&to=${currency}`)
         .pipe(
@@ -49,5 +49,5 @@ export class CurrencyService {
         );
     });
     forkJoin(requests).subscribe();
-  }
+  }*/
 }
