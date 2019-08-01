@@ -24,7 +24,7 @@ SECRET_KEY = config('SECRET_KEY', default='oxr#QHz4TRbqMw8G82uujfdsf213321')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = config("DEBUG", default=True)
-DEBUG = True
+
 
 ALLOWED_HOSTS = [
     '*',
@@ -59,6 +59,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -93,35 +94,12 @@ WSGI_APPLICATION = 'Shops.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-if  DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'infinity',
-            'USER': 'infinity',
-            'PASSWORD': 'infinity@snakescript',
-            'HOST': 'localhost',
-            'PORT': 5432,
-        }
-    }
-else:
-    # PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
-    # DATABASES = {
-    #     'default': {
-    #         'ENGINE': 'django.db.backends.sqlite3',
-    #         'NAME': os.path.join(PROJECT_DIR, 'infinity.db'),
-    #     }
-    # }
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': config("LOCAL_DATABASE_NAME", default="infinity"),
-            'USER': config("LOCAL_DATABASE_USER", default="snake"),
-            'PASSWORD': config("LOCAL_DATABASE_PASSWORD", default="snake"),
-            'HOST': 'localhost',
-            'PORT': 5432,
-        }
-    }
+try:
+    from.local_settings import *
+
+except:
+    from .production import *
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -215,3 +193,6 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CURRENCY_API_KEY = 'sfklsfslkdjfsldf'
 
 from Shops.aws.conf import *  # noqa
+
+
+

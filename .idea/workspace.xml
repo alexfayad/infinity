@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3695bf37-a43d-478c-a00c-9a63eb741f4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Shops/Shops/production.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shops/Shops/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shops/Shops/settings.py" afterDir="false" />
     </list>
@@ -58,16 +59,16 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Shops/static/ang" />
-      <recent name="$PROJECT_DIR$/frontend/src/app/services" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Shops/Shops" />
       <recent name="$PROJECT_DIR$/Shops/static/ang" />
       <recent name="$PROJECT_DIR$/Shops/static/ang/assets/js" />
       <recent name="$PROJECT_DIR$/Shops/static/ang/assets/css" />
       <recent name="$PROJECT_DIR$/Shops/static" />
-      <recent name="$PROJECT_DIR$/Shops/staticfiles/ang" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Shops/static/ang" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/services" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -129,7 +130,7 @@
       <workItem from="1564139374560" duration="3555000" />
       <workItem from="1564222404255" duration="36000" />
       <workItem from="1564377372778" duration="13090000" />
-      <workItem from="1564637246426" duration="2386000" />
+      <workItem from="1564637246426" duration="2891000" />
     </task>
     <servers />
   </component>
