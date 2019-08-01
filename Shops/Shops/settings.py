@@ -105,16 +105,23 @@ if not DEBUG:
         }
     }
 else:
-        DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.postgresql_psycopg2',
-                'NAME': config("LOCAL_DATABASE_NAME", default="infinity"),
-                'USER': config("LOCAL_DATABASE_USER", default="snake"),
-                'PASSWORD': config("LOCAL_DATABASE_PASSWORD", default="snake"),
-                'HOST': 'localhost',
-                'PORT': 5432,
-            }
+    # PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.sqlite3',
+    #         'NAME': os.path.join(PROJECT_DIR, 'infinity.db'),
+    #     }
+    # }
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': config("LOCAL_DATABASE_NAME", default="infinity"),
+            'USER': config("LOCAL_DATABASE_USER", default="snake"),
+            'PASSWORD': config("LOCAL_DATABASE_PASSWORD", default="snake"),
+            'HOST': 'localhost',
+            'PORT': 5432,
         }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
