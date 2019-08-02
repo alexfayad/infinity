@@ -26,7 +26,7 @@ export class ProductListComponent {
     this.scrollEnd.emit();
   }
 
-  getCoefficient(): number {
+   getCoefficient(): number {
     return this.currencyService.getCurrentCoefficient();
   }
 }
