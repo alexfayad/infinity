@@ -10,14 +10,17 @@ export class AuthService {
     const headers = new HttpHeaders({'Authorization': 'Token ' + localStorage.getItem('token')});
         return { headers: headers };
 }
-  public auth_check(login_details) {
-
-   const options = this.tokenHeader();
-   try {
+  public login(login_details) {
      return this.http.post(API_URL + 'get_token/', login_details);
-   } catch (e) {
-     console.log(e);
-   }
-
+  }
+  public signup(signup_details) {
+     return this.http.post(API_URL + 'signup/', signup_details);
+  }
+  public check_login() {
+    const token = localStorage.getItem('token');
+      if (token) {
+      return true;
+    }
+      return false;
   }
 }

@@ -9,6 +9,7 @@ export interface ProductResponse {
   results: Product[];
 }
 
+
 interface BaseOptions {
   page?: string;
 }

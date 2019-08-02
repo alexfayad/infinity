@@ -1,3 +1,5 @@
+from decouple import config
+
 DEBUG = False
 DATABASES = {
         'default': {
@@ -9,3 +11,6 @@ DATABASES = {
             'PORT': 5432,
         }
     }
+
+
+CURRENCY_API_KEY = config('CURRENCY_API_KEY')

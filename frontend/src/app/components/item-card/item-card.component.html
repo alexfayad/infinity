@@ -1,25 +1,15 @@
-<div class="product" (click)="routeToProductURL()">
+<div class="product">
   <div class="image">
-    <span class="favorite">
-     <!-- <img src="../../../assets/images/favorite.svg" alt="">-->
-
-    </span>
-    <a href="#"><img [src]="item.url_img"></a>
+    <span class="favorite" (click)="addTowishlist(item.id)">
+      <img src="{{assets_url}}/images/favorite.svg" alt="">
+      </span>
+    <a (click)="routeToProductURL()">
+      <img [src]="item.url_img">
+    </a>
   </div>
-  <div class="text">
+  <div class="text" (click)="routeToProductURL()">
       <h3>{{ item.name }}</h3>
       <span class="price_less"> {{ item.list_price | currencyChange:currency:coefficient | currency:currency }}</span>
       <span class="price">{{ item.discount_price | currencyChange:currency:coefficient | currency:currency }}</span>
   </div>
 </div>
-
-
-
-<!--<div class="price-block">-->
-<!--        <div [ngClass]="item.discount_price !== '0.00' ? 'price-text m-0':'m-0'">-->
-<!--          {{ item.list_price | currencyChange:currency:coefficient | currency:currency }}-->
-<!--        </div>-->
-<!--        <div *ngIf="item.discount_price !== '0.00'" class="m-0 discount-price">-->
-<!--          &nbsp;{{ item.discount_price | currencyChange:currency:coefficient | currency:currency }}-->
-<!--        </div>-->
-<!--      </div>-->

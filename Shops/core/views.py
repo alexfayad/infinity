@@ -13,17 +13,17 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticated
-
+from rest_framework.authentication import TokenAuthentication
 from django.conf import settings
 
-from core.mixins import BulkCreateModelMixin
-from core.models import Product, Link, ProductType, MapSubcategory, FAQContent, Currency
-from core.serializers import ProductSerializer, ProductTypeSerializer, LinksSerializer, ProductCreateSerializer, \
-    MapSubcategoriesSerializer, FAQContentSerializer
+from .mixins import BulkCreateModelMixin
+from .models import Product, Link, ProductType, MapSubcategory, FAQContent, Currency, Wishlist
+from .serializers import ProductSerializer, ProductTypeSerializer, LinksSerializer, ProductCreateSerializer, \
+    MapSubcategoriesSerializer, FAQContentSerializer, WishListSerializer,UserSerializer
 
 logger = logging.getLogger(__name__)
 
-CURRENCY_API_KEY = getattr(settings, "CURRENCY_API_KEY")
+CURRENCY_API_KEY = settings.CURRENCY_API_KEY
 
 
 class StandardResultsSetPagination(PageNumberPagination):
@@ -158,10 +158,63 @@ class CurrencyView(APIView):
     def get(self, request, **kwargs):
         currency_from, currency_to = request.GET.get(
             "from"), request.GET.get("to")
+
         if not currency_from or not currency_to:
             return Response({"message": "currency_from and currency_to are required arguments"}, status=status.HTTP_400_BAD_REQUEST)
         currency = get_object_or_404(
             Currency, currency_from=currency_from, currency_to=currency_to)
+
         if not currency.timestamp or currency.timestamp + timezone.timedelta(hours=1) < timezone.now():
             currency = self.update_currency(currency)
+
         return Response({"value": currency.value}, status=status.HTTP_200_OK)
+
+
+
+class WishlistViewSet(ModelViewSet):
+    serializer_class = WishListSerializer
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):  # get the queryset
+        return Wishlist.objects.filter(user=self.request.user)
+
+
+    def create(self, request, *args, **kwargs):
+        product_id = request.data.get('productid')
+
+        if not Wishlist.objects.filter(user=self.request.user,product_id=product_id).exists():
+            Wishlist.objects.create(user=request.user,product_id=product_id).save()
+        else:
+            Wishlist.objects.filter(user=self.request.user,product_id=product_id).delete()
+
+        data = Wishlist.objects.filter(user=self.request.user)
+        serialize  = WishListSerializer(data,many=True)
+        return Response(serialize.data)
+
+
+
+class UserCreationSet(ModelViewSet):
+    serializer_class = UserSerializer
+
+
+    def create(self, request, *args, **kwargs):
+
+        username = request.data['username']
+        try:
+            first_name , last_name = request.data['first_name'].split(' ')
+        except:
+            first_name = request.data['first_name']
+            last_name = ''
+
+        email = request.data['email']
+        password = request.data['password']
+
+        if User.objects.filter(username=username).exists():
+            return Response({"error":'username'})
+        else:
+            user_obj = User.objects.create(username=username,first_name=first_name,
+                                           last_name=last_name,email=email)
+            user_obj.set_password(password)
+            user_obj.save()
+            return Response({"success":True})

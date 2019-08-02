@@ -1,7 +1,11 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from core.models import Product, Link, ProductType, SubCategory, MapSubcategory, FAQContent, Currency
+from .models import (
+                    Product, Link, ProductType, SubCategory,
+                    MapSubcategory, FAQContent, Currency,
+                    Wishlist
+                    )
 
 
 @admin.register(Product)
@@ -65,3 +69,6 @@ class FAQContentAdmin(admin.ModelAdmin):
 @admin.register(Currency)
 class CurrencyAdmin(admin.ModelAdmin):
     pass
+
+
+admin.site.register(Wishlist)

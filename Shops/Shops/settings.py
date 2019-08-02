@@ -189,8 +189,7 @@ CELERY_CONFIGURATION = {
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # API keys
-#CURRENCY_API_KEY = config('CURRENCY_API_KEY')
-CURRENCY_API_KEY = 'sfklsfslkdjfsldf'
+
 
 from Shops.aws.conf import *  # noqa
 

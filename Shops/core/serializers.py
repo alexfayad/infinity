@@ -1,6 +1,6 @@
 from rest_framework import serializers
-
-from core.models import Product, ProductType, Link, MapSubcategory, FAQContent
+from django.contrib.auth.models import User
+from .models import Product, ProductType, Link, MapSubcategory, FAQContent,Wishlist
 
 
 class ProductSerializer(serializers.ModelSerializer):
@@ -44,3 +44,19 @@ class FAQContentSerializer(serializers.ModelSerializer):
     class Meta:
         model = FAQContent
         exclude = ['id']
+
+class WishListSerializer(serializers.ModelSerializer):
+    product = ProductSerializer()
+    class Meta:
+        model = Wishlist
+        fields = '__all__'
+
+
+class UserSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True)
+
+    class Meta:
+        model = User
+        fields = ('first_name', 'last_name', 'email', 'password')
+
+

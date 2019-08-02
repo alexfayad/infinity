@@ -1,6 +1,6 @@
 from django.db import models
-
-from core.parser.helpers import map_name_product_to_type
+from django.contrib.auth.models import User
+from .parser.helpers import map_name_product_to_type
 
 ASOS = 'ASOS'
 ADIDAS = 'ADIDAS'
@@ -122,6 +122,8 @@ class Product(models.Model):
     shop_name = models.TextField(choices=Link.SHOP_NAME)
     link = models.ForeignKey(to=Link, on_delete=models.DO_NOTHING)
 
+    def __str__(self):
+        return self.name
 
 class FAQContent(models.Model):
     question = models.TextField()
@@ -133,3 +135,12 @@ class Currency(models.Model):
     currency_to = models.TextField()
     value = models.DecimalField(decimal_places=3, max_digits=10)
     timestamp = models.DateTimeField(auto_now=True)
+
+
+class Wishlist(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    product = models.ForeignKey(Product,on_delete=models.CASCADE)
+
+    def __str__(self):
+
+        return self.user.username
