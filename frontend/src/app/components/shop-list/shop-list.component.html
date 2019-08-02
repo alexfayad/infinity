@@ -1,7 +1,7 @@
 <!--<div class="d-flex flex-column">-->
   <li *ngFor="let shop of shops">
-    <a [queryParams]="{shop_name: shop.shop_name, link__sex: gender}"
-       [routerLink]="['/']"
+    <a
+       (click)="shopfilter(shop.shop_name)"
        class="shop-name font-weight-light">
       <span><!--<img src="../../../assets/images/circle.svg" alt="">--></span>
       {{ shop.verbose_name }} </a>

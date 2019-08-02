@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Shop } from '../../interfaces/shop';
+import {Router} from '@angular/router';
+import {FilterService} from '../../services/filter.service';
 
 @Component({
   selector: 'app-shop-list',
@@ -9,8 +11,11 @@ import { Shop } from '../../interfaces/shop';
 export class ShopListComponent {
   @Input() shops: Shop[];
   @Input() gender: 'M' | 'W';
-  @Input() shopname: any;
-  constructor() {
+  constructor(private router: Router, private filterservice: FilterService) {
+  }
+  shopfilter(shopname): void {
+      this.filterservice.changeFilter(shopname);
+      this.router.navigate(['/'], { queryParams: { shop_name: shopname } });
   }
 
 }
