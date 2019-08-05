@@ -190,7 +190,17 @@ CELERY_CONFIGURATION = {
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # API keys
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+)
 
+
+CSRF_COOKIE_SECURE = False
 
 from Shops.aws.conf import *  # noqa
 
