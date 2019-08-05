@@ -19,8 +19,8 @@ html {
     margin: 10px 0 0 0;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: calc(100vh - 416px);
-    max-height: 300px;
+    height: calc(100vh - 358px);
+    max-height: 436px;
 }
 /* width */
 #brands::-webkit-scrollbar {
@@ -29,15 +29,19 @@ html {
 
 /* Track */
 #brands::-webkit-scrollbar-track {
-  background: #3d3f53;
+  background: #6B7AFF;
 }
 
 /* Handle */
 #brands::-webkit-scrollbar-thumb {
-  background: #70738b;
+  background: #ffffff;
 }
 
 /* Handle on hover */
 #brands::-webkit-scrollbar-thumb:hover {
-  background: #70738b;
+  background: #6b7aff;
+}
+
+svg.favv path{
+      fill: #FF5A5A !important;
 }

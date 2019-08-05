@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {Categories} from '../../interfaces/categories';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-categories-list',
@@ -8,11 +9,11 @@ import {Categories} from '../../interfaces/categories';
   styleUrls: ['./categories-list.component.scss']
 })
 export class CategoriesListComponent implements OnInit {
-  @Input() categories;
+  @Input() categories: Categories[];
   all_categories_buff = [];
   product_type: string;
   subscribe;
-
+  assets_url = environment.assets_url;
   ngOnInit() {
     this.subscribe = this.activatedRoute.queryParams.subscribe(queryParams => {
       this.product_type = queryParams['product_type'];

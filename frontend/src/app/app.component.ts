@@ -7,6 +7,7 @@ import {AuthService} from './services/auth.service';
 import {ActivatedRoute} from '@angular/router';
 import {Product} from './interfaces/product';
 import {Shop} from './interfaces/shop';
+import {Categories} from './interfaces/categories';
 import {Currency, currencyItems} from 'src/app/constants/currency';
 import {Observable} from 'rxjs';
 import {CurrencyService} from 'src/app/services/currency.service';
@@ -29,6 +30,7 @@ export class AppComponent implements OnInit {
   nextPage: string;
   products: Product[] = [];
   shops: Shop[] = [];
+  categories: Categories[] = [];
   menuItems = [
     {name: 'Shops'},
     {name: 'FAQ'}
@@ -40,10 +42,12 @@ export class AppComponent implements OnInit {
   video_modal = false;
   login_modal = false;
   signup_modal = false;
+  gender_filter = true;
   login_error = '';
-  signup_error = ''
+  signup_error = '';
   login_status: boolean;
   wishlist_count = 0;
+  gender_filter_exclude = ['/faq', '/about', '/contact'];
   LoginForm = new FormGroup({
   confirm_email : new FormControl('', [Validators.required, Validators.email]),
   username: new FormControl('', Validators.required),
@@ -69,7 +73,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.apiService.getShops().subscribe((shops: Shop[]) => this.shops = shops);
+    this.apiService.getCategories().subscribe((categories: Categories[]) => this.categories = categories);
     this.filterservice.filter.subscribe(message => this.shopname = message);
+    this.filterservice.gender_filter.subscribe(message => this.gender_filter = message);
     this.login_status = this.authservice.check_login();
     this.activatedRoute.queryParams.pipe().subscribe(params => {
       this.products = [];
@@ -86,6 +92,12 @@ export class AppComponent implements OnInit {
            this.apiService.wishlists.subscribe(message => this.wishlist_count = message);
          });
     }
+    const self = this;
+    this.gender_filter_exclude.forEach(function (value) {
+        if (value === location.pathname) {
+          self.gender_filter = false;
+        }
+      });
   }
 
   openMenuForItem(menuItem: string) {
@@ -127,24 +139,31 @@ export class AppComponent implements OnInit {
         });
   }
   onSignup() {
+      this.signup_error = '';
       const name = this.SignupForm.value['name'];
       const username = this.SignupForm.value['username'];
       const email = this.SignupForm.value['email'];
       const password = this.SignupForm.value['password'];
       const confirm_password = this.SignupForm.value['confirm_password'];
       const signup_details = {'username': username, 'first_name': name, 'email': email, 'password': password};
-      console.log(password, confirm_password)
       if ( password.length >= 8 && password === confirm_password) {
         this.authservice.signup(signup_details).subscribe(data => {
-          if (data['sucess']) {
+          if (data['success'] === true) {
             this.signup_modal = false;
             this.login_modal = true;
-          }
-          else {
-            this.signup_error = 'Username already exists';
+          } else {
+            if (data['error'] === 'email') {
+              this.signup_error = 'Email alreay exists';
+            }
+            if (data['error'] === 'username') {
+              this.signup_error = 'Username already exists';
+            }
+
           }
       });
-    }
+    } else {
+        this.signup_error = 'Password and confirm password must match and must be greater than 8 characters ';
+      }
   }
   logout() {
       localStorage.removeItem('token');

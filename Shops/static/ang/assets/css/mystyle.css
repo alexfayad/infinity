@@ -264,7 +264,7 @@ ul.CTAs a {
 ----------------------------------------------------- */
 
 #content {
-    width: calc(100% - 250px);
+    width: calc(100% - 260px);
     padding: 0px 40px;
     min-height: 100vh;
     transition: all 0.3s;
@@ -313,7 +313,7 @@ ul.CTAs a {
 }
 
 div#page-top_mar {
-    margin: 95px 0 0 0;
+    margin: 30px 0 0 0;
 }
 .wishlist_sec_right {
     float: right;
@@ -381,11 +381,11 @@ div#page-top_mar {
 
 .btn_custom:focus,active
 {
-       box-shadow: none; 
+       box-shadow: none;
 }
 .btn_custom:active
 {
-       box-shadow: none; 
+       box-shadow: none;
 }
 #content .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
        box-shadow: none;
@@ -535,11 +535,11 @@ p.hint-text a {
 
 .modal_custom button.btn.btn-primary:focus,active
 {
-       box-shadow: none; 
+       box-shadow: none;
 }
 .modal_custom button.btn.btn-primary:active
 {
-       box-shadow: none; 
+       box-shadow: none;
 }
 .modal_custom .modal-body {
     padding: 10px 59px;

@@ -210,8 +210,11 @@ class UserCreationSet(ModelViewSet):
         email = request.data['email']
         password = request.data['password']
 
-        if User.objects.filter(username=username).exists():
+        if username and User.objects.filter(username=username).exists():
             return Response({"error":'username'})
+
+        if email and User.objects.filter(email=email).exists():
+            return Response({"error":'email'})
         else:
             user_obj = User.objects.create(username=username,first_name=first_name,
                                            last_name=last_name,email=email)

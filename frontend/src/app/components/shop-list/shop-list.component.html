@@ -1,12 +1,11 @@
-<!--<div class="d-flex flex-column">-->
   <li *ngFor="let shop of shops">
     <a
-       (click)="shopfilter(shop.shop_name)"
+       (click)="shopfilter(shop.shop_name);genderfilter()"
        class="shop-name font-weight-light">
-      <span><!--<img src="../../../assets/images/circle.svg" alt="">--></span>
+      <span><img src="{{assets_url}}/images/circle.svg" alt=""></span>
       {{ shop.verbose_name }} </a>
   </li>
-<!--</div>-->
+
 
 
 

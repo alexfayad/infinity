@@ -15,6 +15,7 @@ export class ItemCardComponent implements OnInit {
   @Input() item: Product;
   @Input() currency: Currency;
   @Input() coefficient: number;
+  status = false;
 
   constructor(private api: ApiService) {}
 
@@ -31,4 +32,7 @@ export class ItemCardComponent implements OnInit {
       this.api.wishlist_source.next(data.length);
   });
   }
+  clickEvent() {
+    this.status = !this.status;
+}
 }

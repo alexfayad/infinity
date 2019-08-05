@@ -1,6 +1,7 @@
 import { environment } from 'src/environments/environment';
 
 export const API_URL = environment.apiUrl;
+export const login_url = environment.login_url;
 
 export default {
   PRODUCTS: API_URL + 'product/',
