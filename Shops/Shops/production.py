@@ -14,6 +14,6 @@ DATABASES = {
         }
     }
 
-STATIC_ROOT = os.path.join(settings.BASE_DIR, 'static')
+
 
 CURRENCY_API_KEY = config('CURRENCY_API_KEY')
