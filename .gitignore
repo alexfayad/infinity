@@ -87,6 +87,7 @@ target/
 
 local_settings.py
 static_collected/
+staticfiles/
 .env
 db.sqlite3
 
