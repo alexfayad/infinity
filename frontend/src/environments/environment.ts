@@ -8,7 +8,7 @@ export const environment = {
   vigLink: 'https://redirect.viglink.com',
   vigKey: '3982fa502a2fc8ba008bebe81b46771c',
   assets_url : '../assets',
-  login_url : 'hhttp://127.0.0.1:8000/api/'
+  login_url : 'http://127.0.0.1:8000/api/'
 };
 
 /*
