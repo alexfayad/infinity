@@ -77,7 +77,7 @@ def get_firefox_driver():
     profile.update_preferences()
     caps = DesiredCapabilities().FIREFOX
     caps["pageLoadStrategy"] = "none"
-    caps["marionette"] = True
+    caps["marionette"] = False
     options = firefox_options()
     options.headless = True
     options.add_argument('start-maximized')
