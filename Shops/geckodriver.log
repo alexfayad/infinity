@@ -751,3 +751,259 @@ JavaScript error: https://www.calvinklein.es/, line 38: SecurityError: The opera
 JavaScript error: https://www.calvinklein.es/wcsstore8.00.00.331/PVHStoreFrontAssetStore/pwa/ck/dist/ck_app_desktop.js, line 1686: SecurityError: The operation is insecure.
 JavaScript error: , line 0: TypeError: Property 'handleEvent' is not callable.
 1553813295738	Marionette	INFO	Stopped listening on port 54766
+1565241806612	geckodriver	INFO	geckodriver 0.20.1
+1565241806635	geckodriver	INFO	Listening on 127.0.0.1:34565
+1565241807651	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "start-maximized" "-profile" "/tmp/rust_mozprofile.aQTbIX0WhNMi"
+*** You are running in headless mode.
+1565241810917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565241810917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565241810917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565241810917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565241811139	Marionette	TRACE	Received observer notification profile-after-change
+1565241811329	Marionette	TRACE	Received observer notification command-line-startup
+1565241811329	Marionette	TRACE	Received observer notification nsPref:changed
+1565241811329	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1565241811885	Marionette	TRACE	Received observer notification toplevel-window-ready
+1565241814112	Marionette	TRACE	Received observer notification marionette-startup-requested
+1565241814112	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1565241814115	Marionette	TRACE	All scripts recorded.
+1565241814116	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1565241814116	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1565241814116	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1565241814116	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1565241814116	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1565241814117	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1565241814117	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1565241814117	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+
+(/usr/lib/firefox/firefox:10034): dconf-WARNING **: 05:23:34.242: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1565241814256	Marionette	INFO	Listening on port 39459
+1565241814256	Marionette	DEBUG	Remote service is active
+1565241814301	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:40648
+1565241814316	Marionette	DEBUG	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"none"}},"pageLoadStrategy":"none"}]
+1565241814316	Marionette	DEBUG	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:179: ... t@chrome://marionette/content/server.js:236:9\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:492:20\n"},null]
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565222410127%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1565242241502	geckodriver	INFO	geckodriver 0.20.1
+1565242241547	geckodriver	INFO	Listening on 127.0.0.1:47113
+1565242242531	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "start-maximized" "-profile" "/tmp/rust_mozprofile.AGPopechFWfH"
+*** You are running in headless mode.
+1565242246076	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565242246076	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565242246077	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565242246077	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565242246273	Marionette	TRACE	Received observer notification profile-after-change
+1565242246703	Marionette	TRACE	Received observer notification command-line-startup
+1565242246703	Marionette	TRACE	Received observer notification nsPref:changed
+1565242246704	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1565242247352	Marionette	TRACE	Received observer notification toplevel-window-ready
+1565242249668	Marionette	TRACE	Received observer notification marionette-startup-requested
+1565242249669	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1565242249673	Marionette	TRACE	All scripts recorded.
+1565242249673	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1565242249673	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1565242249674	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1565242249674	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1565242249674	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1565242249674	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1565242249674	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1565242249674	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+
+(/usr/lib/firefox/firefox:11067): dconf-WARNING **: 05:30:49.754: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1565242249835	Marionette	INFO	Listening on port 39591
+1565242249836	Marionette	DEBUG	Remote service is active
+1565242249922	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:52864
+1565242249954	Marionette	DEBUG	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"none"}},"pageLoadStrategy":"none"}]
+1565242249954	Marionette	DEBUG	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:179: ... t@chrome://marionette/content/server.js:236:9\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:492:20\n"},null]
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565222410127%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1565242400393	geckodriver	INFO	geckodriver 0.20.1
+1565242400399	geckodriver	INFO	Listening on 127.0.0.1:39331
+1565242401429	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "start-maximized" "-profile" "/tmp/rust_mozprofile.qZkI3MwtR5LO"
+*** You are running in headless mode.
+1565242401873	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565242401873	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565242401873	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565242401873	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565242401989	Marionette	TRACE	Received observer notification profile-after-change
+1565242402175	Marionette	TRACE	Received observer notification command-line-startup
+1565242402176	Marionette	TRACE	Received observer notification nsPref:changed
+1565242402176	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1565242402414	Marionette	TRACE	Received observer notification toplevel-window-ready
+
+(/usr/lib/firefox/firefox:11569): dconf-WARNING **: 05:33:23.065: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1565242403319	Marionette	TRACE	Received observer notification marionette-startup-requested
+1565242403319	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1565242403372	Marionette	TRACE	All scripts recorded.
+1565242403372	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1565242403372	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1565242403373	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1565242403373	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1565242403373	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1565242403373	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1565242403373	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1565242403374	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1565242403411	Marionette	INFO	Listening on port 34375
+1565242403411	Marionette	DEBUG	Remote service is active
+1565242403442	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:60332
+1565242403444	Marionette	DEBUG	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"none"}},"pageLoadStrategy":"none"}]
+1565242403444	Marionette	DEBUG	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:179: ... t@chrome://marionette/content/server.js:236:9\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:492:20\n"},null]
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565222410127%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1565242621380	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "start-maximized" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.gdldSutfFZGB"
+*** You are running in headless mode.
+1565242621668	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565242621668	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565242621669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565242621669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:12077): dconf-WARNING **: 05:37:02.747: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1565242622979	Marionette	INFO	Listening on port 40745
+1565242622986	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565222410127%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1565242701954	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "start-maximized" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vi53WnCCAXF8"
+*** You are running in headless mode.
+1565242702269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565242702269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565242702270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565242702270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:12515): dconf-WARNING **: 05:38:23.239: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1565242703596	Marionette	INFO	Listening on port 43795
+1565242703659	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565222410127%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1565242776603	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "start-maximized" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.d6rOJBqghVxJ"
+*** You are running in headless mode.
+1565242776873	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565242776874	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565242776874	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565242776874	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:12879): dconf-WARNING **: 05:39:37.837: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1565242778208	Marionette	INFO	Listening on port 34699
+1565242778308	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565222410127%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1565242854390	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "start-maximized" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.f4WNqQJdEyIe"
+*** You are running in headless mode.
+1565242854841	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565242854841	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565242854841	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565242854841	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:13264): dconf-WARNING **: 05:40:56.162: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1565242856463	Marionette	INFO	Listening on port 45181
+1565242856524	Marionette	WARN	TLS certificate errors will be ignored for this session
+1565242857288	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "start-maximized" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1RxBtyjYBTIE"
+*** You are running in headless mode.
+1565242857894	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565242857894	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565242857895	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565242857895	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:13490): dconf-WARNING **: 05:40:59.137: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1565242859516	Marionette	INFO	Listening on port 42527
+1565242859615	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565222410127%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565222410127%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1565242993853	Marionette	INFO	Stopped listening on port 45181
+1565243165223	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "start-maximized" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RiLXWLEOlaYC"
+*** You are running in headless mode.
+1565243165744	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565243165744	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565243165744	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565243165744	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:14069): dconf-WARNING **: 05:46:06.898: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1565243167190	Marionette	INFO	Listening on port 36709
+1565243167251	Marionette	WARN	TLS certificate errors will be ignored for this session
+1565243168674	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "start-maximized" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BKDRMR3bQqc9"
+*** You are running in headless mode.
+1565243168958	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565243168959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565243168959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565243168959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:14288): dconf-WARNING **: 05:46:09.930: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1565243170282	Marionette	INFO	Listening on port 46557
+1565243170379	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565222410127%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565222410127%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1565243304547	Marionette	INFO	Stopped listening on port 36709
+[Parent 13995, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox-tGfEvD/firefox-68.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 13995, Gecko_IOThread] WARNING: pipe error (74): Connection reset by peer: file /build/firefox-tGfEvD/firefox-68.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358

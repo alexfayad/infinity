@@ -180,11 +180,11 @@ CELERY_CONFIGURATION = {
     'beat_schedule': {
         'parsing': {
             'task': 'core.tasks.parse',
-            'schedule': 3 * 60.0 * 60.0
+            'schedule': 3 * 60.0 * 60.0 #beat after 3 hour
         }
     },
 
-    'beat_sync_every': 1
+    'beat_sync_every': 1 # beat will call sync after every task message is sent
 }
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
