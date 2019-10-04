@@ -17,6 +17,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { UnderscoreKillerPipe } from './pipes/underscore-killer.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CurrencyChangePipe } from './pipes/currency-change.pipe';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CurrencyChangePipe } from './pipes/currency-change.pipe';
     AboutComponent,
     UnderscoreKillerPipe,
     CurrencyChangePipe,
+    WishlistComponent,
   ],
   imports: [
     BrowserModule,

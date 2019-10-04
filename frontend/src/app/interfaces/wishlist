@@ -1,0 +1,4 @@
+export interface Wishlist {
+  shop_name: string;
+  verbose_name: string;
+}

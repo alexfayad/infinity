@@ -54,7 +54,7 @@ export class ApiService {
   }
   getWishlist() {
     const header = this.auth.tokenHeader();
-    return this.http.get(urls.WISHLIST, header);
+    return this.http.get<ProductResponse>(urls.WISHLIST, header);
   }
   addWishlist(id) {
     const header = this.auth.tokenHeader();
