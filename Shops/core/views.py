@@ -12,7 +12,7 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated,AllowAny
 from rest_framework.authentication import TokenAuthentication
 from django.conf import settings
 
@@ -87,6 +87,7 @@ class ProductsView(generics.ListAPIView):
     pagination_class = StandardResultsSetPagination
     filter_backends = (DjangoFilterBackend, ProductTypeFilterBackend)
     filter_fields = ('shop_name', 'link__sex')
+    permission_classes = (AllowAny,)
 
     def get(self, request, *args, **kwargs):
         return super().get(request, *args, **kwargs)

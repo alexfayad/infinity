@@ -5,11 +5,20 @@ from .models import Product, ProductType, Link, MapSubcategory, FAQContent,Wishl
 
 class ProductSerializer(serializers.ModelSerializer):
     sex = serializers.CharField(source="link.sex")
+    loved = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
-        fields = "__all__"
+        fields = ['id','loved','sex','product_type','url_img',
+                  'url_original','list_price','discount_price',
+                  'name','loved','shop_name'
+                  ]
 
+    def get_loved(self,obj):
+        if self.context.get('request'):
+            return Wishlist.objects.filter(user__username=self.context['request'].user,product=obj).exists()
+        else:
+            return False
 
 class ProductTypeSerializer(serializers.ModelSerializer):
     subcategories = serializers.StringRelatedField(many=True)

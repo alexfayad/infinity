@@ -15,7 +15,8 @@ router.register(r'signup',UserCreationSet,base_name='signup'),
 urlpatterns = [
 
         path('',include(router.urls)),
-        path('product/', cache_page(60 * 5)(ProductsView.as_view())),
+        # path('product/', cache_page(60 * 5)(ProductsView.as_view())),
+        path('product/', ProductsView.as_view()),
         path('shop/', cache_page(60 * 5)(ShopView.as_view())),
         path('categories/', CategoriesView.as_view()),
         path('map_categories/', MapSubcategoriesView.as_view()),
