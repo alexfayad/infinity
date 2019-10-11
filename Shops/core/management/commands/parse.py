@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 
-from core.parser.run import parse_all
+from ...parser.run import parse_all
 
 
 class Command(BaseCommand):

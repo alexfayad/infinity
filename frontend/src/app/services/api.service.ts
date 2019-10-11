@@ -3,7 +3,7 @@ import { Categories } from './../interfaces/categories';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import {Observable, Subject} from 'rxjs';
-import { ProductParams, ProductResponse, ShopResponse } from '../interfaces/common';
+import {ProductParams, ProductResponse, ShopResponse, WishlistResponse} from '../interfaces/common';
 import { map } from 'rxjs/operators';
 import urls from '../constants/urls';
 import { Shop } from '../interfaces/shop';
@@ -52,9 +52,9 @@ export class ApiService {
   getProductsByUrl(url: string): Observable<ProductResponse> {
     return this.http.get<ProductResponse>(url);
   }
-  getWishlist() {
+  getWishlist(): Observable<WishlistResponse> {
     const header = this.auth.tokenHeader();
-    return this.http.get<ProductResponse>(urls.WISHLIST, header);
+    return this.http.get<WishlistResponse>(urls.WISHLIST, header);
   }
   addWishlist(id) {
     const header = this.auth.tokenHeader();

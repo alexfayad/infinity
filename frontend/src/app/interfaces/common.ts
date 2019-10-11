@@ -9,6 +9,13 @@ export interface ProductResponse {
   results: Product[];
 }
 
+export interface WishlistResponse {
+  count: number;
+  next: null | string;
+  previous: null| string;
+  results: Product[];
+}
+
 
 interface BaseOptions {
   page?: string;

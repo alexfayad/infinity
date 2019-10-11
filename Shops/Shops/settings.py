@@ -199,6 +199,11 @@ CORS_ALLOW_METHODS = (
     'PUT',
 )
 
+CORS_ORIGIN_WHITELIST = [
+    "http://127.0.0.1:4200",
+    "http://127.0.0.1:8000",
+    "http://159.65.220.179:8000"
+]
 
 CSRF_COOKIE_SECURE = False
 

@@ -175,6 +175,7 @@ class WishlistViewSet(ModelViewSet):
     serializer_class = WishListSerializer
     authentication_classes = (TokenAuthentication,)
     permission_classes = [IsAuthenticated]
+    pagination_class = StandardResultsSetPagination
 
     def get_queryset(self):  # get the queryset
         return Wishlist.objects.filter(user=self.request.user)

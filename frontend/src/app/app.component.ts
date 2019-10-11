@@ -118,6 +118,9 @@ export class AppComponent implements OnInit {
         this.router.navigate(['/'], { queryParams: { link__sex: selected_filter } });
       }
   }
+  wish(): void {
+    this.router.navigate(['/'], { queryParams: { wish: true } });
+  }
   onLogin() {
       const username = this.LoginForm.value['username'];
       const password = this.LoginForm.value['password'];

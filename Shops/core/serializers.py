@@ -49,7 +49,7 @@ class WishListSerializer(serializers.ModelSerializer):
     product = ProductSerializer()
     class Meta:
         model = Wishlist
-        fields = '__all__'
+        fields = ['id','product']
 
 
 class UserSerializer(serializers.ModelSerializer):

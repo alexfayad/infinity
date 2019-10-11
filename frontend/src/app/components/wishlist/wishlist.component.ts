@@ -3,8 +3,8 @@ import {ApiService} from '../../services/api.service';
 import {Product} from '../../interfaces/product';
 import {ProductParams, ProductResponse} from '../../interfaces/common';
 import {map, tap} from 'rxjs/operators';
-import {environment} from "../../../environments/environment";
-
+import {environment} from '../../../environments/environment';
+import {ProductListComponent} from '../product-list/product-list.component';
 
 
 @Component({
@@ -15,7 +15,7 @@ import {environment} from "../../../environments/environment";
 export class WishlistComponent implements OnInit {
   nextPage: string;
   wishlist:  any;
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService, private prdct: ProductListComponent ) { }
 
   ngOnInit() {
      this.apiService.getWishlist(

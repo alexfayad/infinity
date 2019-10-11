@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent },
   { path: 'contact', component: ContactComponent},
   { path: 'about', component: AboutComponent},
-  { path: 'wishlist', component: WishlistComponent}
+  // { path: 'wishlist', component: WishlistComponent}
 ];
 
 @NgModule({

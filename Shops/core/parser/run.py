@@ -3,27 +3,27 @@ import traceback
 
 from celery.utils.log import get_task_logger
 
-from core.models import Product, Link
-from core.parser.grabber import get_firefox_driver, get_chrome_driver
-from core.parser.parsers.adidas_parser import parse_adidas_page
-from core.parser.parsers.all_saints_parser import parse_all_saints
-from core.parser.parsers.asos_parser import parse_asos_page
-from core.parser.parsers.cham_parser import parse_champion_page
-from core.parser.parsers.ck_parser import parse_all_ck
-from core.parser.parsers.guess_parser import parse_guess_page
-from core.parser.parsers.reebok_parser import parse_reebok_page
-from core.parser.parsers.tommy_parser import parse_tommy_page
-from core.parser.parsers.topman_parser import parse_topman_page
-from core.parser.parsers.zara_parser import parse_zara_page
+from ..models import Product, Link
+from ..parser.grabber import get_firefox_driver, get_chrome_driver
+from ..parser.parsers.adidas_parser import parse_adidas_page
+from ..parser.parsers.all_saints_parser import parse_all_saints
+from ..parser.parsers.asos_parser import parse_asos_page
+from ..parser.parsers.cham_parser import parse_champion_page
+from ..parser.parsers.ck_parser import parse_all_ck
+from ..parser.parsers.guess_parser import parse_guess_page
+from ..parser.parsers.reebok_parser import parse_reebok_page
+from ..parser.parsers.tommy_parser import parse_tommy_page
+from ..parser.parsers.topman_parser import parse_topman_page
+from ..parser.parsers.zara_parser import parse_zara_page
 
 # logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
 logger = get_task_logger(__name__)
 
 map_shop_name_to_func_parse = {
-    "ASOS": parse_asos_page,
-    "ADIDAS": parse_adidas_page,
-    "CHAMPION": parse_champion_page,
+    # "ASOS": parse_asos_page,
+    # "ADIDAS": parse_adidas_page,
+    # "CHAMPION": parse_champion_page,
     "TOMMY": parse_tommy_page,
     "ZARA": parse_zara_page,
     "TOPMAN": parse_topman_page,
@@ -34,9 +34,9 @@ map_shop_name_to_func_parse = {
 }
 
 map_shop_name_to_driver = {
-    "ASOS": "firefox",
-    "ADIDAS": "adidas",
-    "CHAMPION": "firefox",
+    # "ASOS": "firefox",
+    # "ADIDAS": "adidas",
+    # "CHAMPION": "firefox",
     "TOMMY": "chrome",
     "ZARA": "chrome",
     "TOPMAN": "chrome",
@@ -57,6 +57,7 @@ def parse_shop(link_type, driver):
     logger.info("Start parse {}. Links: {}".format(link_type, len(links)))
     sum_len = 0
     for url, shop_name, link_id in links:
+        print(url,'kladsjaslkd')
         try:
             for item in parse_func(driver, url):
                 if item.get('url_original'):
@@ -91,21 +92,22 @@ def parse_shop(link_type, driver):
 
 
 def parse_all(shops=shops_all):
-    ff_driver = get_firefox_driver()
+    # ff_driver = get_firefox_driver()
     ch_driver = get_chrome_driver()
-    ad_driver = get_firefox_driver() if "ADIDAS" in shops else None
+    # ad_driver = get_firefox_driver() if "ADIDAS" in shops else None
     drivers = {
-        "firefox": ff_driver,
+        # "firefox": ff_driver,
         "chrome": ch_driver,
-        "adidas": ad_driver,
+        # "adidas": ad_driver,
     }
 
     for shop in shops:
         driver_name = map_shop_name_to_driver[shop]
+        print(shop,driver_name)
         parse_shop(shop, drivers[driver_name])
 
-    ff_driver.close()
-    ff_driver.quit()
+    # ff_driver.close()
+    # ff_driver.quit()
     ch_driver.close()
     ch_driver.quit()
 

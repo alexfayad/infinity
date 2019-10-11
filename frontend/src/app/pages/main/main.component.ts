@@ -17,6 +17,7 @@ export class MainComponent {
   faCoffee = faInfinity;
   nextPage: string;
   products: Product[] = [];
+  another_prod = [];
   shops: Shop[] = [];
   categories: Categories[] = [];
 
@@ -27,13 +28,28 @@ export class MainComponent {
     this.apiService.getShops().subscribe((shops: Shop[]) => this.shops = shops);
     this.apiService.getCategories().subscribe((categories: Categories[]) => this.categories = categories);
     this.activatedRoute.queryParams.pipe().subscribe(params => {
-      this.products = [];
-      this.apiService.getFilteredProducts(<ProductParams>{...params})
-        .pipe(
-          tap((response: ProductResponse) => this.nextPage = response.next),
-          map((response: ProductResponse) => response.results),
-        ).subscribe(products => this.products = products);
+      if (Object.keys(params)[0] === 'wish') {
+        this.products = [];
+          this.apiService.getWishlist().pipe(
+            tap((response: ProductResponse) => this.nextPage = response.next),
+            map((response: ProductResponse) => response.results),
+          ).subscribe((products) => {
+            products.map((ele) => {
+              // @ts-ignore
+              this.products.push(ele.product);
+
+            });
+          });
+      } else {
+        this.products = [];
+        this.apiService.getFilteredProducts(<ProductParams>{...params})
+          .pipe(
+            tap((response: ProductResponse) => this.nextPage = response.next),
+            map((response: ProductResponse) => response.results),
+          ).subscribe(products => this.products = products);
+      }
     });
+
   }
 
   getNextPage(): void {
